@@ -1,0 +1,52 @@
+										SCOOP
+									-----------------------
+
+
+	-"Scoop" refers to Apache Sqoop (SQL-to-Hadoop), 
+	-which is a tool designed to transfer data between Hadoop and relational databases.
+	-Sqoop is commonly used to import data from relational database management systems (RDBMS) into Hadoop Distributed File System (HDFS) and export data from Hadoop back to RDBMS.
+	
+	-importing and exportin tool used in HDFS
+ 
+
+									hdfs
+								-----------------
+								|customer	|----------------------------------------
+		-------------------------------------------->	|		|					|
+		|						|movies		|<-----------------------		|
+		|						|		|			|		|
+		|						-----------------	
+		|											pig		~
+	-----------------										-------------------
+	|mysql_database|										|	          |
+	| -----------  |										|		  |
+	|Tables	       |										|		  |
+	|Emp_table     |										|		  |
+	|student_table |										|		  |
+	---------------											-------------------
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
