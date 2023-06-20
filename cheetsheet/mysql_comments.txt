@@ -1,0 +1,35 @@
+
+CREATE db		create database db_name;
+verify db created	show database;
+DELETE db		drop database db_name;
+SELECT db		use db_name;
+CREATE table		create table table_name(schema);
+verify table created	show tables;
+DESCRIBE		describe table_name;
+
+
+ALTER
+ADD col. to table	alter table table_name add column_name data_type;
+ADD col. after a col.	alter table table_name add column_name data_type after col_name;
+ADD col. at first	alter table talbe_name add column_name data_type first;
+ADD multple col.	alter table table_name add column_name_1 data_type, column_name_2 data_type, column_name_3 data_type..;
+						OR
+			alter table table_name add (colname1 data_type, colname2 data_type, .....);
+
+ADD multiple cols.
+in multiple positions	alter table table_name add column_name2 data_type after column_name3 , add column_name5 after column_name4;
+
+editing:
+
+CHANGE data_type	alter table table_name modify col_name new_data_type;
+CHANGE col. name	alter table table_name change old_col._name new_col._name data_type;
+DELETE column		alter table table_name drop col_name;
+CHANGE table_name	alter table table_name	alter table old_table_name rename to new_tablen_name:
+
+
+INSERT values to table		insert into table_name(column_names) values(values);
+
+VIEW data form table		select * form table_name;
+UPDATE col. values		update table_name colname='value' where condition;
+DELETE rows form table		delete form table_name wher condition;\
+DROP table			drop table_name;
