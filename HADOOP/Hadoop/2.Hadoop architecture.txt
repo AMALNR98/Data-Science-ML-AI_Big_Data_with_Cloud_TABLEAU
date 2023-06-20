@@ -1,0 +1,210 @@
+
+
+
+-----------------------------------------------------------------------Hadoop Architecture----------------------------------------------------------------------------
+
+- 5 Demons in Hadoop
+----------------------
+	The term "demons" in the context of Hadoop refers to the individual processes or services that run on different nodes in a Hadoop cluster to perform specific tasks.
+		1. Name Node
+		2. Data Node
+		3. Secondary Name Node
+		4. Job Tracker
+		5. Task Tracker
+
+-> Hadoop 2.O 
+	Hadoop 2.O is known as "YARN" (Yet Another Resourse Negotiator)
+	> 5 Demons in YARN
+		1. Name Node
+		2. Data Node
+	 	3. Resourse Manager
+	 	4. Node Manager
+	 	
+	 	
+	 	
+Architecture of Name Node & Data Node
+-------------------------------------
+	
+	* It's an Master - Slave archhitecture
+		HDFS (Master)  :  Name Node
+		Slave          :  Data Node
+		
+		
+		
+		
+		Architecture:
+		------------ 
+		
+		
+		
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       									----------------------------------
+		                                                       									|      |       |        |        |
+		Data from outside                                -------------------------------					|  X1  |   X2  |   X3   |   X4   |
+                (this coming data             ------------------>|         Name Node            |					|---------------------------------
+		 Spliter to Blocks)                              -------------------------------					|  D1  |   D2  |   D3   |   D4   |
+		    Called "split Block")                              |     |    |    |						|      |       |        |        |
+		                                                       |     |    |    |						----------------------------------
+  		   Hadoop : 65MB                                       |     |    |    |
+ 		   YARN   : 128 Mb                                     |     |    |    |
+		                                                       |     |    |    |
+					--------------------------------     |    |     ----------------------------------			The Data stored to DN is based on 
+		                        |                                    |    |					  |				1. Location
+		                        |                                    |    |					  |				2. Network traffic 
+		                        |                   ------------------    -----------------			  |				3. Data reduntancy
+		                   	|		    |					  |			  |
+		                   -----------       --------------                        --------------          ----------------
+		                   |  DN 1   |       |    DN2      |                       |   DN3      |          |     D4       |
+		                   -----------       --------------                        --------------           ---------------
+		                                                       
+		                                
+		                                
+		                                
+		                                
+		                                
+		                                                       
+		                                                       
+		Heartbeat Communication:
+		
+			 DataNodes regularly communicate with the NameNode through heartbeat messages to report their status and availability.
+			 This communication ensures that the NameNode is aware of the active DataNodes in the cluster and their ability to store data. 
+			 The NameNode uses this information to determine which DataNodes can receive additional data blocks for storage.	                           
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+-----------------------------------------------------------------------PROBLEMS-------------------------------------------------------------	                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+1. A user give 960MB of data, then howmuch  Meta Blocks where created in Name Node
+Ans)
+
+	To determine the number of metadata blocks created in the NameNode when a user gives 960MB of data, 
+	we need to consider the default block size in Hadoop and the size of the metadata associated with each data block.
+
+	The default block size in Hadoop is typically set to 64MB.
+	However, it's important to note that the block size can be configured to a different value based on specific requirements. 
+	For the sake of this calculation, let's assume the default block size of 128MB.
+
+	Given that the user provides 960MB of data, and the block size is 128MB, we can calculate the number of data blocks created:
+
+	Number of data blocks = Total data size / Block size
+			      = 960MB / 64MB= 15 
+			      (rounded to the nearest whole number)
+
+	Therefore, when a user provides 960MB of data, approximately 7 metadata blocks would be created in the NameNode. 
+	The metadata blocks store information about the file, such as the file's attributes, permissions, and the mapping of data blocks to their respective DataNodes 
+	in the cluster.		                                                       
+		                                                       
+2. A user give 700MB of data, then howmuch  Meta Blocks where created in Name Node		                                                       
+Ans)
+
+			Number of data blocks  =  700 / 64Mb =  11 Meta blocks   
+			                                                  
+3. A user give 550MB of data, then howmuch  Meta Blocks where created in Name Node
+	a) For Hadoop
+	b) For YARN		                                                       
+Ans)	                                                       
+		                                                       
+		a) For Hadoop :
+			550 / 64 = 8.9 =9
+		
+		b)For YARN   :
+			550 / 128 = 4.2 = 5                                                       
+		                                                       
+4. A user give 1.2GB of data, then howmuch  Meta Blocks where created in Name Node
+	a) For Hadoop
+	b) For YARN		                                                       
+Ans)	                                                       
+		                                                       
+		a) For Hadoop :
+			1.2 * 1024 = 1228.5 
+			1228.5 / 64 = 20 Meta Blocks
+		
+		b)For YARN   :
+			1228.5 / 128 = 9.8 = 10                                                    
+		             
+
+5. A user give 0.01 TB of data, then howmuch  Meta Blocks where created in Name Node
+	a) For Hadoop
+	b) For YARN		                                                       
+Ans)	                                                       
+		                                                       
+		a) For Hadoop :
+			
+			10485.76 / 64 = 
+		
+		b)For YARN   :
+			10485.76 / 128 = 
+			
+			
+------------------------------
+
+
+6) Howmuch storage will assigned for 128 Meta-Blocks
+ans)
+		1.In Hadoop
+			120 * 64 = 7680 MB
+		
+		2. In YARN
+			120 * 128 + 15280 MB                                               
+		   
+
+7) Howmuch storage will assigned for 128 Meta-Blocks
+ans)
+		1.In Hadoop
+			120 * 64 = 7680 MB
+		
+		2. In YARN
+			120 * 128 + 15280 MB                                               
+		                       
+
+------------------------------------------------------------------------------------		                                                                          	                                                       
+8) Howmuch storage will assigned for 85 Meta-Blocks, The last block have 60Mb of data
+ans)
+		1.In Hadoop
+			84 *64 + 60 = 5436 MB
+		
+		2. In YARN
+			84 * 128 + 60MB = 10812 MB                                               
+		                                		                                                       
+9) Howmuch storage will assigned for 95 Meta-Blocks, The last block have 40Mb of data
+ans)
+		1.In Hadoop
+			94 * 64 + 40 = 6056 MB
+		
+		2. In YARN
+			94 * 128 + 40MB = 120732 MB   	                                                       
+		                                                       
+		                                                       
+		                                                       
+10) Howmuch storage will assigned for 70 Meta-Blocks, The last block have 66 Mb of data    ******                  
+ans)
+
+	This question is not valid for Hadoop
+	Because in Haddoop the size of one meta block is 64MB
+	So it's not possible
+	
+	In YEARN:
+		69 * 128 + 66 =
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       
+		                                                       

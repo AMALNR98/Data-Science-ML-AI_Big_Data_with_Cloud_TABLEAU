@@ -1,0 +1,280 @@
+ type of installation
+-----------------------
+	- multinode insatllation 
+	- singlenode Installation
+
+we are using single node installation
+
+
+single node installation
+------------------------
+
+
+Step 1 : Creating user
+	
+	for that create an group
+		- sudo addgroup 'grpname'
+					group name : hadoop
+			sudo addgroup hadoop
+	
+				GID :1001
+
+
+step 2 : creating user
+		
+	-   sudo adduser --ingroup 'groupname' 'username' 
+		
+		sudo adduser --ingroup hadoop hduser
+			
+	then give username and password
+
+
+step 3 : User Previleage 
+		give all permissions for hduser
+
+		etc : cofiguration files are included in this file
+		
+	we set user previlages in sudoers file
+                                  -------
+		for that we use command
+			         sudo gedit /etc/sudoers
+										sudoers : a file Linux and Unix administrators use to allocate system rights to system users
+		
+	then in that text file
+		#user privilege specification
+		root   ALL=(ALL:ALL) ALL
+
+		add the below line  
+		
+	>>>>>>>>>>		hduser   ALL=(ALL:ALL) ALL
+
+
+step 4 : switch into hduser
+		su - "username"
+		su - hduser
+
+step 5 : Key generation step
+	we useing encryption mechanisam 
+		public key encryption
+
+	key generation command:
+		ssh-keygen -t rsa
+
+				rsa algorithm
+		
+			then enter enter
+
+
+step 6 : autherize the generated key
+	autherizing the generated key
+	
+	cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_key
+
+step 7 : Network protocols
+
+	Hadoop worked only in ipv4
+
+	so disable ipv6
+	---------------
+
+	etc/sysctl.conf     ---------->edit this file for edit network protocols
+
+
+	sudo gedit /etc/sysctl.conf
+			here to edit file gedit will not work, instead of this use nano
+
+	sudo nano /etc/sysctl.conf
+
+         in up coming window copy the following commen under "Functions previously found in netbase"
+
+
+			
+			net.ipv6.conf.all.disable_ipv6 = 1
+			net.ipv6.conf.default.disable_ipv6 = 1
+			net.ipv6.conf.lo.disable_ipv6 = 1
+		
+step 8 : install JAVA
+		
+			Download these files
+				https://drive.google.com/file/d/1KviReZQCZ_XuMRQl6qtcs4xZaRDg8Jbg/view
+
+				https://drive.google.com/file/d/1BO174rXGxrKmjScBfuHxSsqucKh9p8JX/view
+
+			Extract files
+
+	step 1: for that first copy jdk file to hduser
+		
+		for that take source path from bin 
+		
+		/home/amal/Downloads/jdk-8u191-linux-x64/jdk1.8.0_191
+
+		command :
+			sudo cp -R "source_path" ~/java
+
+			sudo cp -R /home/amal/Downloads/jdk-8u191-linux-x64/jdk1.8.0_191 ~/java
+
+
+				here ~/java will creat in hduser
+
+	step 2: copy hadoop to hduser
+		
+		sudo cp -R /home/amal/Downloads/hadoop-2.9.2 ~/hadoop
+
+step 9 : Directory permisson
+
+	sudo chmod -R 777 "directory name"
+
+	for java :
+		sudo chmod -R 777 java
+	for hadoop :
+		sudo chmode -R 777 hadoop
+
+step 10 : give ownership permission
+
+	sudo chown -R "username":"groupname" "directoryname"
+
+	for hadoop:
+	sudo chown -R hduser:hadoop hadoop
+
+	
+step 11: in linux, installing any packages, we have to set its path in "bashrc" file
+
+	sudo nano ~/.bashrc
+
+	Then upcomming file, at the end of the file copy the following commend
+
+	
+		export JAVA_HOME=/home/hduser/java
+		PATH="$JAVA_HOME/bin":$PATH
+		export HADOOP_HOME=/home/hduser/hadoop
+		PATH="$HADOOP_HOME/bin":"$HADOOP_HOME/sbin":$PATH
+
+	then save it....
+
+
+step 12 : Execute bashrc file
+
+	source ~/.bashrc
+
+step 13 : check the java and haoop installed
+
+		java -version
+
+		hadoop version
+				hadoop 2.9.2 -----> YARN
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Now we are only installed the body of hadoop
+The next step is configuaion of hadoop
+
+
+We use 4 configuation files
+
+	1. hadoop-env.sh    ----> To set java path
+	2. core-site-xml    ----> for name node and datnode configuration
+	3. hdfs-site.xml    ----> Replication factor ----> secondary name node configuration
+	4. mapred-site.xml  ----> Resourse manager and node mangaer configuration
+
+
+
+hadoop-env.sh
+--------------
+
+configuration files in
+	etc/hdoop/configuration
+
+	sudo nano /home/hduser/hadoop/etc/hadoop/hadoop-env.sh
+
+
+	in this file in 
+		The jave implimentaion to use
+			expor JAVA_HOMW=${......}
+		replace with
+			export JAVA_HOME="/home/hduser/java"
+
+
+
+
+sudo mkdir -p /app/hadoop/tmp
+--------------------------------
+		this is used for storing 5 demons packages for configuration
+
+
+	step 1: give dirctory permission
+		sudo chmod -R 777 /app
+
+	step 2: give ownership permission
+
+		sudo chown -R "username":"groupname" /app                            (All daemons are stored here)
+		sudo chown -R hdusera:hadoop /app
+
+
+download all xml files and put it in config directory
+then copy to hadoop's configutation directory
+
+			sudo cp -R /home/amal/Downloads/configs/*.xml ~/hadoop/etc/hadoop
+
+
+connect hadoop to local network
+------------------------------------
+for that install an server
+
+	sudo apt-get openssh-server
+
+then,
+
+	openssh-server
+
+
+step 1: update system
+	sudo apt update
+	sudo apt-get install openssh-server
+
+step 2: install server
+	sudo apt-get install openssh-server
+
+step 3 : connect with server
+	ssh localhost
+
+now all processes are competed 
+the remove all log file from master(name node)
+for that:
+	hadoop namenode -format
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+now insallation is completed
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+####################################################################################################################################################
+
+Start all deomens for check all are working properly
+
+
+start-all.sh
+
+
+then very all demons are persent
+
+for that :
+		jps
+
+
+The out will
+ resourceManger
+ NameNode
+ Jps
+ NodeManger
+ SecondaryNameNode 
+
+
+
+#####################################
+Always close all demons when shutdown system
+
+for that:
+		stop-all.sh

@@ -1,0 +1,35 @@
+Data Science & ML
+
+	-A-Z of Python(Core and Advanced)
+	- Numpys
+	- Pandas
+	- Data Frame
+	- Sci-kit
+	- Exploratory Data Analytics using Python (EDA)
+	- Data Wrangling
+	- Data Visualization
+	- Matplotlib
+	- Seaborn
+	- Machine Learning
+	- Supervised Learning :
+		 - Regression :
+		 	- Simple Linear Regression
+		 	- Logistic Regression
+		 	- Multiple Linear Regression
+		 	- Polynomial Regression
+		 	- Decision Tree Regression
+		 	- Evaluating Regression Model Parameters,
+		 - Classification :
+		  	- K Nearest Neighbors ( KNN )
+		  	- Naive Bayes Classifier
+		  	- Decision Tree Algorithm
+		  	- Random Forest Algorithm
+		  	- SVM
+	- Unsupervised Machine Learning :
+		- Introduction To Clustering Algorithms
+		- K-Means Clustering
+		- Elbow Method for the optimal value of k in K-Means
+		- Hierarchical Clustering
+		- Capstone Project
+		- Dimensionality Reduction
+		- Principal Component Analysis. 

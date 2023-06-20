@@ -1,0 +1,210 @@
+Mapredusing alogritham
+----------------------
+
+4 steps
+	- splitting mechanisem
+	- Mapping mechanisem
+	- shuffling
+	- Reduecing
+
+
+Wordcount problem
+------------------
+	-----------------------------------------------------------------------------------
+	|cat rat cat rat bat bat cat rat bat rat cat bat bat mango mango bat cat rat mango|
+	-----------------------------------------------------------------------------------
+
+
+cat-5
+rat-5
+bat-5
+mango-3
+
+
+	1)splitting mechanisem
+	--------------------
+		- divid data into blocks
+			hadoop : 64 mb
+			yarn : 128 mb
+
+		out put after splittinig
+
+		--------------------------	-----------------------         -------------------            --------------
+		|cat  rat cat rat bat bat|       |cat rat bat rat cat |        |bat mang mango bat |          |cat rat mango|  (line by line)
+		--------------------------       ---------------------          --------------------            ------------
+	
+		
+		these blocks are called """"""""""records"""""""""""
+
+			k1 : key ------> is hexa decimal value
+			v1 : value-----------> text
+
+	2) Mapping mechanism
+	--------------------		
+	
+	key,value
+	------
+	|cat,1|
+	|rat,1|
+	|cat,1|
+	|rat,1|
+	|bat,1|
+	|bat,1|
+	------
+
+
+	------
+	|cat,1|
+	|rat,1|
+	|bat,1|
+	|rat.1|
+	|cat,1|
+	------
+
+
+	---------
+	|bat,1  |
+	|mangp.1|
+	|mango,1|
+	|bat,1  |
+	---------
+
+
+	---------
+	|cat,1  |
+	|rat,1  |
+	|Mango,1|
+	---------
+
+
+	this is called intermediate output of MR algorithm 
+		in this satege count in each block from the output of splitting mechanisem, give count 
+		so we get word by word data
+			------------------
+														The result represented as  list(k2,v2)
+														-------------------------------------
+
+	3) Shuffling mechanisum
+	-----------------------		
+
+		here we take key as list then, take values from each blocks
+
+
+		---------------
+		|cat[1,1,1,1,1]|
+		----------------
+
+		-----------------
+		|rat[1,1,1,1,1,]|
+		-----------------
+
+		----------------
+		|bat[1,1,1,1,1]|
+		----------------
+
+		--------------
+		|mango[1,1,1]|
+		--------------
+
+	
+	4) Reduceing mechanism
+	----------------------		
+		Then take total count and it give it to single block
+
+		
+		-----------
+		| cat,5   |
+		| rat,5   |
+		| bat,5   |
+		|mango,3  |
+		-----------
+
+		list(v4,k4)
+
+
+
+
+
+
+
+this algorithm is implemented by JAVA 
+in JAVA we use classes 
+	
+	we use 3 classes for mapreducing
+	--------------------------------
+
+		1. Mapper class
+		2. Reduser class
+		3. Driver class 
+   
+
+		we complete above 4 steps in these 3 classes
+
+		
+		Mapper class
+		---------------
+			1) read input data
+			2) splitting mechansim and mapping mechnism
+
+
+		Reduser class
+		------------
+			1) collect mapper class output (intemediate output)
+			2) Shuffling and reducing mechanism
+		
+
+		Driver class
+		-----------
+
+			Main class() is called drive class
+		
+			configuration
+			-------------
+			1) configure mapper class, reducer class
+			2) configure input and output class
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+gurnt shell
+---------
+	After invoking the Grunt shell, you can run your Pig scripts in the shell. 
+							----------------------
+hive shell
+---------
+
+	Hive shell is a primary way to interact with hive.
+
+	It is a default service in the hive.
+
+	It is also called CLI (command line interference).
+
+	Hive shell is similar to MySQL Shell.
+
+IDE (Integreated Development Environment)
+-------------------------------------------
+	for JAVA
+		Elipse
+		intelligie
+		VS code
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-when a code is wirtten in java it give it into an single file this file is called "Jar_file"
+										 ------------
+
+	then this file give it into hadoop file 
+	then will run using hdfs command
+
+
+		hadoop jar jar_file_location input_path output_path
+
+					input_path - path of code
+					output_path - the result of code where stored
+							here output is created as directory, so always give new name for directory
+							for view output use cat command
+							hadoop fs -cat output_path
+
+
+	example
+		hadoop fs -mkdir /Java_program
+		hadoop jar /home/amal/Downloads/WordCount1.jar /wordcount/java/sample.txt /wordcount/java_output
+		hadoop fs -cat /wordcount/java_output/part-r-00000
+------------------------------------------------------------------------------END----------------------------------------------------------------------------------------------------

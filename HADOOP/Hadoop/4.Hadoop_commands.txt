@@ -1,0 +1,181 @@
+start all demons
+----------------
+	start-all.sh
+
+then
+	open browser then take localhost
+	localhost:50070
+
+
+-for start daemons in hdfs
+-------------------------- 
+	start-dfs.sh
+
+-stop demons in hdfs
+---------------------
+	stop-dfs.sh
+
+-for start processing demons
+-----------------------------
+	start-yarn.sh
+
+-for stop processing demons
+---------------------------
+	stop-yarn.sh
+
+-when we start all demon there is chance for misssing of one demon so check the demon where belongs to then, 
+---------------------------------------------------------------------------------------------------------
+	-if it is in hdfs
+		start-dnf.sh
+
+	-if it's in YARN 
+		start-yarn.sh
+
+-for start an daemon individually for hadoop
+-------------------------------------------
+	hadoop-demon.sh start "name"
+
+	for YARN
+	 yarn-daemon.sh start "name"
+
+-for stop a daemon individually
+--------------------------------
+	hadoop-daemon.sh stop "name"
+
+
+---------------------------------
+first start all			|
+if all daemons didn't came      |
+start componet wise             |
+the do individully              |
+---------------------------------
+hard-way
+---------
+	sudo rm -r /app
+	sudo mkdir -R /app/hadoop/tmp
+	sudo chmod -R 777 /app
+	sudo chown -R hduser:hadoop /app
+	ssh localhost
+	hadoop namenode -format
+
+-for find full detail and status of hadoop
+------------------------------------------
+	hadoop fsck - /
+						fsck - file system check
+
+-To check memory status
+-----------------------
+	hadoop fs -df hdfs:/
+
+-for check then name node working properly 
+-------------------------------------------
+	hadoop balancer
+##########################################################################################################################################################################################################
+
+Important comments
+--------------------
+
+
+-list : for list datas in HDFS
+	>>>hadoop fs -ls /
+
+												/ ==> root of hdfs or top of hdfs (list all contents of main page)
+-How to create a directory in HDFS
+	>>> hadoop fs -mkdir /"directory name"
+
+-How to create a dirctory inside and direrctory
+	>>> hadoop fs -mkdir /"directryname(parent)"/"dirctroyname(child)"
+
+
+--------------------------------------------------------------------------------------------------------
+assigement
+----------
+
+#Luminar/coursers/bigdata/hadoop
+	spark
+			#python dango
+			angular
+			react
+			flutter/dart
+			testing
+
+---------------------------------------------------------------------------------------------------------
+
+mkdir -p
+--------
+hadooop fs -mkdir -P /a/b/c/d
+
+
+how to create a file
+---------------------
+
+touchz
+
+hadoop fs -touchz /"filename"
+
+
+													<<<<<	dirctory doesn't have replication factor   >>>>>>
+To find count of directries and files then size
+-----------------------------------------
+	hadoop fs -count /
+
+	no.of directories	no.of files	size
+
+	hadoop fs -count /'dirctories name"
+
+
+how to delete file 
+------------------
+
+	hadoop fs -rm /filename
+
+How to delete a directory
+-------------------------
+
+	hadoop fs -rmdir /"filename"         ---> when directroy empty
+	hadoop fs -rm -r /"filename"         ---> when directroy is not empty
+
+How to copy a file
+-----------------
+
+	2 types of copy methord
+		1) hdfs to hdfs
+		---------------
+			hadoop fs -cp "source_path" "destination_path"
+
+		2)local to hdfs copy methord
+		----------------------------
+			hadoop fs -copyFromLocal "source_path" "destination_path"
+
+			hadoop fs -put "sourse_path" "destination_path"
+
+How to display hdfs data
+------------------------
+	hadoop fs -cat /filepath
+
+
+	- head is not implemented in hdfs
+
+	- only tail commend is used in hdfs
+
+		hadoop fs -tail /filename
+
+		''''''''''''''''''''''''in tail we can access up 1 kilo byte of data'''''''''''''''''''''''
+
+How to copy an directory
+-------------------------
+	
+	-likewise files, same command used for directory
+		hadooop fs -cp "soursepath" "destinationpath"
+
+How to copy file form hdfs to local 
+----------------------------------
+	hadoop fs -copyToLocal "sourse_Path" "destination_path"
+	
+	in here we can't copy file, because of no permission for local to access file 
+	so give permission
+	sudo chmod -R 777 "Destination_path"
+
+	- hadoop fs -get "soursepath" 'destinationpath"
+
+===================================================================================================END========================================================================================================

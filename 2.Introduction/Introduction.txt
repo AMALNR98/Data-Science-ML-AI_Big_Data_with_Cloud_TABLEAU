@@ -1,0 +1,211 @@
+-Big data
+----------
+	Big data refers to extremely large and complex datasets that are beyond the ability of traditional data processing applications to efficiently capture, store, manage, and analyze. 
+	It typically involves datasets with a size ranging from terabytes to petabytes and even exabytes.
+
+	The term "big data" is characterized by three key aspects, often referred to as the three V's:
+
+	1. Volume: 
+	-----------
+		Big data involves a massive volume of data. 
+		With the increasing digitization of various processes and the growth of technologies like IoT, social media, and sensors, data is being generated at an unprecedented rate.
+		This includes structured, semi-structured, and unstructured data from various sources.
+
+	2. Velocity:
+	------------ 
+		Big data is generated at high velocity. The speed at which data is produced, collected, and processed is a crucial characteristic of big data.
+		Real-time or near-real-time data generation, streaming data, and rapidly changing data sources contribute to the velocity aspect of big data.
+
+	3. Variety: 
+	-----------
+		Big data encompasses diverse data types and formats. It includes structured data (such as traditional databases), 
+		semi-structured data (like log files and XML files), and unstructured data (such as text, images, audio, and video). 
+		Big data can originate from sources such as social media, sensor data, customer transactions, emails, and more.
+
+	Beyond the three V's, big data can also exhibit additional characteristics:
+
+	4. Veracity:
+	------------ 
+		Veracity refers to the quality and reliability of data. 
+		Big data can contain errors, inconsistencies, and inaccuracies, and it requires careful validation and cleansing to ensure data quality.
+
+	5. Value: 
+	---------
+		Extracting value from big data is a primary objective.
+		By analyzing large and diverse datasets, organizations can gain insights, make informed decisions, identify patterns and trends, and create business value. 
+		The potential value that can be	derived from big data is a driving force behind its collection and analysis.
+
+	Big data analytics involves applying advanced techniques, such as data mining, machine learning, and predictive analytics, to derive meaningful insights from large datasets.
+	These insights can lead to improved operational efficiency, enhanced customer experiences, better decision-making, and new business opportunities.
+	
+	
+--Bigdata Technologies
+-----------------------
+	-Bigdata analysis:
+	-----------------
+		Big data analysis, also known as big data analytics, refers to the process of extracting valuable insights and actionable information from large and complex datasets, 
+		commonly referred to as big data.
+		It involves applying various analytical techniques and tools to process, analyze, and interpret the vast volumes of data to discover patterns, trends, correlations, and other valuable insights.
+
+		-Big data analysis typically involves the following steps:
+		-----------------------------------------------------------
+
+	    		-Data Acquisition: 
+	    		------------------
+	    			This step involves collecting and gathering large volumes of data from various sources, which may include structured, semi-structured, and unstructured data.
+
+	    		-Data Preprocessing: 
+	    		--------------------
+	    			In this step, the collected data is cleaned, transformed, and prepared for analysis. 
+	    			It may involve tasks such as data cleaning, data integration, data normalization, and handling missing values.
+
+	    		-Data Storage: 
+	    		--------------
+	    			The data is stored in a suitable data storage system, such as a distributed file system like Hadoop Distributed File System (HDFS) or cloud-based storage systems.
+	
+			-Data Analysis: 
+			---------------
+				This is the core step of big data analysis. Various analytical techniques and tools are applied to the data to uncover patterns, relationships, and insights. 
+				This may include statistical analysis, data mining, machine learning, predictive modeling, text mining, sentiment analysis, and more.
+
+	    		-Visualization and Interpretation: 
+	    		----------------------------------
+	    			The insights and findings from the analysis are visualized using charts, graphs, and other visual representations. 
+	    			This helps in better understanding and interpretation of the results, enabling decision-makers to grasp the key insights effectively.
+
+	    		-Decision-making and Action: 
+	    		----------------------------
+	    			Based on the insights derived from the analysis, informed decisions can be made to drive business strategies, 
+	    			improve operational efficiency, enhance customer experiences, optimize processes, and identify new business opportunities.
+
+		Big data analysis enables organizations to derive valuable insights, make data-driven decisions, and uncover hidden patterns and trends that would be difficult or 
+		impossible to identify using traditional data analysis methods. 
+		It has applications in various domains, including business, healthcare, finance, marketing, social media analysis, cybersecurity, and more.
+		
+		-Tools used in Bigdata analysis:
+		-------------------------------
+			Hadoop:
+			-------
+				Hadoop is an open-source framework designed for distributed storage and processing of large-scale datasets. 
+				It provides a scalable, fault-tolerant, and cost-effective solution for handling big data. Hadoop is based on the concept of distributed computing, 
+				where data and computation are spread across a cluster of computers.
+			Spark:
+			------
+				Apache Spark is an open-source distributed computing system and data processing framework. 
+				It is designed to perform fast, scalable, and efficient data processing tasks on large datasets. 
+				Spark was developed at the University of California, Berkeley's AMPLab in 2009 and later open-sourced in 2010.
+
+				Spark provides a unified and high-level API for distributed data processing, allowing developers to write code in multiple languages such as Scala, Java, Python, and R. 
+				It supports a wide range of data processing tasks, including batch processing, real-time streaming, machine learning, graph processing, and interactive querying.
+		
+		
+	-Data Science:
+	--------------
+		Data science is an interdisciplinary field that involves extracting knowledge, insights, and actionable information from data using scientific methods, processes, algorithms, and tools.
+		It combines elements of mathematics, statistics, computer science, domain expertise, and problem-solving to analyze large and complex datasets and derive meaningful insights.
+	
+		Artificial Inteligence:
+		-----------------------
+			Artificial Intelligence (AI) is a branch of computer science that focuses on the development of intelligent machines that can perform tasks that typically require human intelligence.
+			AI systems aim to simulate and replicate human cognitive abilities, including learning, reasoning, problem-solving, perception, and decision-making.
+			
+			AI utilizes various techniques and approaches, including:
+
+    			Machine Learning:
+    			-----------------
+    				 Machine learning involves training AI systems on large datasets to recognize patterns and make predictions or decisions without explicit programming. 
+    				It includes techniques such as supervised learning, unsupervised learning, and reinforcement learning.
+
+    			Deep Learning:
+    			-------------	
+    			 	Deep learning is a subfield of machine learning that focuses on training deep neural networks with multiple layers to process complex data and extract 
+    			 	meaningful representations.
+    			 	It has been particularly successful in areas such as image and speech recognition.
+
+   			Natural Language Processing (NLP): 
+   			----------------------------------
+   				NLP deals with the interaction between computers and human language. 
+   				It involves tasks like language understanding, sentiment analysis, language generation, and machine translation.
+   			
+   			Neural Networks:
+   			----------------
+   				Neural networks, also known as artificial neural networks (ANNs), are a key component of artificial intelligence and machine learning. 
+   				They are computational models inspired by the structure and functioning of biological neural networks in the human brain. 
+   				Neural networks consist of interconnected nodes called artificial neurons or "nodes" or "units," organized in layers.
+
+				The structure of a neural network typically consists of three types of layers:
+
+    					Input Layer:
+    					------------
+    						 The input layer receives the initial data or features and passes them to the subsequent layers for processing.
+
+    					Hidden Layers:
+    					--------------
+    						 Hidden layers are intermediate layers between the input and output layers. 
+    						They perform complex computations and transformations on the input data through weighted connections between neurons.
+
+    					Output Layer:
+    					------------- 
+    						The output layer provides the final output or prediction based on the computations performed by the hidden layers.
+
+				Each connection between neurons in the neural network has an associated weight, which represents the strength or importance of that connection. 
+				During the training process, these weights are adjusted to optimize the network's performance on a specific task.
+
+				Neural networks use activation functions to introduce non-linearity into the computations. Activation functions determine the output of a neuron based on its weighted inputs. 
+				Common activation functions include sigmoid, ReLU (Rectified Linear Unit), and softmax.
+
+				Training a neural network involves a process called "backpropagation," where the network learns from labeled training data. 
+				During backpropagation, the network adjusts the weights of its connections to minimize the difference between predicted outputs and actual outputs, 
+				using an optimization algorithm such as gradient descent.
+   			
+
+-TABLEAU
+--------
+
+	Tableau is a widely used data visualization and business intelligence tool that helps people see and understand their data. 
+	It allows users to connect to various data sources, create interactive and visually appealing dashboards, reports, and charts, 
+	and gain insights from data through intuitive visualizations.
+
+	Key features of Tableau include:
+
+    	Data Connection:
+    	----------------
+    	 	Tableau can connect to a wide range of data sources, including databases, spreadsheets, cloud services, and big data platforms. 
+    	 	It simplifies data integration and allows users to work with data from multiple sources simultaneously.
+
+	Drag-and-Drop Interface:
+	------------------------
+		 Tableau offers a user-friendly interface that enables users to build visualizations by simply dragging and dropping data fields onto the canvas. 
+		 This makes it easy for users without extensive programming knowledge to create visualizations and perform data analysis.
+
+    	Interactive Dashboards:
+    	-----------------------
+    	 	Tableau allows users to create interactive dashboards by combining multiple visualizations into a single view. Users can filter, drill down, and explore data in real-time, 
+    	 	enabling them to uncover insights and answer ad-hoc questions on the fly.
+
+	Powerful Visualizations:
+	------------------------
+		Tableau offers a wide range of visualization options, including bar charts, line charts, scatter plots, maps, heat maps, and more. 
+		Users can customize the appearance and behavior of visualizations, apply filters and parameters, and create calculated fields to derive new insights from the data.
+
+    	Data Blending and Transformation: 
+    	---------------------------------
+    		Tableau provides capabilities for data blending, where users can combine data from different sources and perform calculations across multiple datasets. 
+    		It also offers data transformation features, such as data cleaning, shaping, and pivoting, to prepare data for analysis.
+
+	Collaboration and Sharing:
+	--------------------------
+		 Tableau allows users to collaborate by sharing workbooks, dashboards, and insights with others in the organization. 
+		 It supports interactive collaboration features, such as commenting and annotations,
+		 and provides options for publishing and sharing visualizations on the web or embedding them in other applications.
+
+	Advanced Analytics: 
+	-------------------
+		Tableau integrates with various statistical and analytical tools, enabling users to perform advanced analytics, predictive modeling, and statistical analysis within the Tableau environment. 
+		It also supports integration with programming languages like R and Python for more advanced data analysis and modeling.
+
+	Tableau is used in a wide range of industries and domains, including business intelligence, finance, marketing, healthcare, and government. 
+	It empowers users to visually explore and analyze data, gain insights, and make data-driven decisions, ultimately driving business growth and efficiency.
+	
+	
+	

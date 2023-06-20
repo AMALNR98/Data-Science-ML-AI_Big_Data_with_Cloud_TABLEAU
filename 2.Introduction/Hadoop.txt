@@ -1,0 +1,210 @@
+
+
+
+
+												Hadoop
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	Hadoop is an open-source distributed computing framework designed to store and process large
+	datasets across a cluster of computers. 
+	It provides a reliable, scalable, and fault-tolerant solution for handling big data.
+	- Used for bigdata storage and bigdata processing
+	
+																					Meta data: data of data
+	
+												HADOOP
+												  |
+												  |
+								----------------------------------------------------------------------------------
+								|										 |
+								|										 |
+							Bigdata Storage									Bigdata processing	
+								|										 |
+								|										 |
+						HDFS(Hadoop didtrbuted file system)                                                          Mapredusing
+								|										 |
+								|										 |
+				  ----------------------------------------------------------					----------------------------------
+				  |				|			   |					|				 |
+				  |				|			   |					|				 |
+				  |				|			   |					|				 |
+			         NN			       DN		          SNN				       JT				 TT
+			     (Name Node)		   (Data Node)	         (Secondary Name node)			  (JOb Tracker)			   (Task Tracker)
+			   Store Meta data		   Data srored		     Backup data			Assign job to TT                Complete job generateed
+			   																  	by JT
+	
+	
+	
+	
+
+	The core components of Hadoop are:
+
+	1. Hadoop Distributed File System (HDFS): 
+	-----------------------------------------
+		HDFS is the primary storage system used in Hadoop. 
+		It is a distributed file system that can store large amounts of data across multiple machines in a cluster. 
+		HDFS provides high throughput and fault tolerance by replicating data across different nodes.
+
+	2. Yet Another Resource Negotiator (YARN): 
+	------------------------------------------
+		YARN is the resource management framework in Hadoop. 
+		It manages and allocates resources (CPU, memory, etc.) to applications running on the Hadoop cluster. 
+		YARN ensures efficient resource utilization and enables concurrent processing of multiple workloads.
+
+	3. MapReduce: 
+	-------------
+		MapReduce is a programming model and processing engine used in Hadoop for distributed data processing. 
+		It divides large datasets into smaller chunks, processes them in parallel across the cluster, and then combines the results. 
+		MapReduce provides fault tolerance and scalability for processing large-scale data.
+
+	In addition to these core components, Hadoop has several other tools and components that extend its functionality and make it more accessible, such as:
+
+		- Hadoop Common:
+		----------------
+			 It provides libraries and utilities that are shared across the Hadoop ecosystem, including common tools and infrastructure.
+
+		- Hadoop Streaming:
+		-------------------
+		 	It allows developers to write MapReduce jobs in languages other than Java, by using standard input and output streams for communication.
+
+		- Hive: 
+		--------
+			Hive is a data warehousing infrastructure built on top of Hadoop. It provides a SQL-like query language (HiveQL) to query and analyze data stored in Hadoop.
+
+		- Pig:
+		------
+		 	Pig is a high-level data flow scripting language that simplifies the development of MapReduce jobs. 
+		 	It allows users to write complex data transformations using a scripting language called Pig Latin.
+
+		- Spark:
+		--------
+			 Although not a part of the core Hadoop project, Apache Spark is often used alongside Hadoop. 
+			 Spark is a fast and general-purpose cluster computing system that provides in-memory processing capabilities and a wide range of libraries for data processing, 
+			 machine learning, and graph processing.
+
+	Hadoop is widely adopted by organizations for processing and analyzing large datasets. Its distributed and scalable architecture, 
+	combined with the rich ecosystem of tools, makes it a powerful framework for big data processing and analytics.
+
+
+----------------------------------------------------------------------------------------Hadoop Syllabus---------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------Module 1
+Hadoop architecture
+-------------------
+
+1. Architecture of NN & Bn
+2. Architecture of SNN
+3. Architecture of Job tracker and task tracker
+
+-----------------------------------------------------------Module 2
+Hadoop installation
+
+-----------------------------------------------------------Module 3
+- Data storage
+- HDFs Commands
+
+-----------------------------------------------------------Module 4
+- MapRedusing
+	(algorithm for processing data,
+	Hadoop is created by JAVA,
+	We don't use Java for coding, Instead of JAVA we use Hadoop echo systems(tools in hadoop ))
+	
+-----------------------------------------------------------Module 5
+-Hadoop Echo-systems
+		PIG :   used for bigdata process
+			Piglattin :quary language
+		Hadoop straming : Piglattin convers to JAVA
+		
+-----------------------------------------------------------Module 6
+-Hive
+	-hive is also hadoop echo-system
+	-used for bigdata processing
+	-language is (HQL- Hive Query Language / Higbernate Query Language)
+	
+-----------------------------------------------------------Module 7
+SQOOP ( echo-system)
+	-Importing & exporting tools
+	-SQL to Hadoop (sqoop)
+	
+	
+	
+	
+	
+	
+	 ---------------                     -----------
+	|   LINUX	|		|		|
+	|				|
+	|  -----------	|
+	| |MySQL DB   |	|
+	| |	      |	|
+	| |	      |	|
+	| |	      |	|
+	| |	      |	|
+	| |	      |	|
+	| |	      |	|				
+	| |	      |	|
+	| |	      |	|
+	|  -----------	|
+	|		|
+	 ---------------
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

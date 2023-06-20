@@ -1,0 +1,16 @@
+		PIG
+		----
+	-it is an hadooop ecosystem
+	-is used for bigdata processing
+
+
+				Java					|				Piglattin
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+	-complex							|	scripting language
+									|
+	3 class : mapper,Reucer,Dirver					|	uses operators
+									|		load,store, group, group all, foreach, limit, filter, split
+									|
+	for create and program we had to use 80-100 lines of code       |	we can complete code with 4-5 lines of codes
+									|
+	Compilation is slow	

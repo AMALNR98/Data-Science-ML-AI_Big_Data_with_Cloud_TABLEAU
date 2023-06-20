@@ -1,0 +1,33 @@
+load		relation_name = LOAD '/path' using PigStorage('data_sepereation') as (schema);
+dump		dump relation-name
+discribe	discripe relation_name
+store		STORE relation-name into '/path/(new_dir name)' using PigStorage('data-seperation');
+group		new_relation_name = GROUP old_relatin_Name by column_name;
+group all	new_relation_name = GROUP old_relation all;
+foreach		new_relation_name = FOREACH old_realtaion generate colnames;
+limit		new_realtaion_name = LIMIT old_relation name number;
+order		for asc:
+                          new_relation_name = ORDER old_relation_name by "col_name" asc;
+                for desc:
+                          new_relation_name = ORDER old_relation_name by "col_name"  desc:
+filter		new_relation_name = FILTER old_relation_name by "column_name" condidtion;
+split		SPLIT oldrelation into new_relation_1 if condition1,new_relation_2 if conditon2;
+DISTINCT	new_relation_name =  DISTINCT old_relation;
+
+
+
+count		new_relation_name = FOREACH old_realtin_name genereate group ,COUNT(main_relation) as "column_name";
+
+	FLATTEN(TOKENIZE())
+			new_relation_name = FOREACH old_relation generate FLATTEN());
+			
+MAX		new_relation_name = FOREACH oldrealion_name generate group, MAX(mainrelaion.column_name);
+MIN		new_relation_name = FOREACH old_relation_name generate group,MIN(main_relation.column);
+SUM		new_reation_name = FOREACH old_realtion_name gernerate group, SUM(main_relaiton.coumn_name);
+AVG		new_realtion_name = FOREACH old_relaton_name genereate group, AVG(main_reltaion.column_name);
+
+matcher	names = FILTER moives by name matches 'A.*';
+to LOWERCASE:	new_relation_name = FOREACH old_relation_name genereate group LOWER(column_name);
+to UPPERCASE;	new_relation_name = FOREACH old_relation_name genereate group UPPER(column_name);
+UCFIRST	new_relation_name = FOREACH old_relation_name genereate group USFIRST(column_name);
+lcfirst	new_relation_name = FOREACH old_relation_name genereate group LCFIRST(column_name);

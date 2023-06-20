@@ -1,0 +1,42 @@
+											pig installation
+											------------------
+
+
+Step 1:
+	- copy extracted file to hduesr
+		
+		sudo cp -R /home/amal/Downloads/pig-0.17.0 ~/pig
+
+Step 2:
+	- give directory perimission
+		
+		sudo chmod -R 777 pig
+
+
+	- give ownership permission
+
+		sudo chown -R hduser : hadoop pig
+
+Step 3:
+	- give pig's path in bashrc
+
+		sudo nano ~/.bashrc
+
+		in coming window at bottom paste :
+			
+			export PIG_HOME=/home/hduser/pig
+			PATH="$PIG_HOME/bin":$PATH
+
+Step 4:
+	execute bashrc file
+		
+		source ~/.bashrc
+
+
+
+
+To veryfy pig type pig in shell 
+		then an grunt shell open
+										pig installation completed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

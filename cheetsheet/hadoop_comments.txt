@@ -1,0 +1,32 @@
+start all daemons			start-all.sh
+stat daemons in hdfs			start-dfs.sh
+stop deamons in hdfs			stop-dfs.sh
+start procssing deamons			start-yarn.sh
+stop prcessing deamons			stop-yarn.sh
+start daemon individually for hadoop	hadoop-daemon.sh start "name"
+start daemon individually for yarn	yarn-daemon.sh start  "name"
+find full details and status		hadoop fsck - /
+check memory status			hadoop fs -df hdfs:/
+check the namenode working properly	hadoop balancer
+
+
+list				hadoop fs -ls /
+create directroy		hadoop fs -mkdir /"directory_name"
+create a dir insider dir	hadoop fs -mkdir /"directory_name(parent)"/"direcrtoy_name(child)"
+create dir tree 		hadoop fs -mkdir -P /a/b/c/d
+create file			hadoop fs -touchz/"filename"
+find properties and file	hadoop fs -count /
+				hadoop fs -count /'directories_name"
+delete dir			hadoop fs -rmdir /'filename'
+				hadoop fs -rm -R /'filename'
+copy file			hadoop fs -cp "source_path" "destination_path"
+copy local to hdfs		hadoop fs -copyFromLocal "source_path" "destination_path"
+				hadoop fs -put "source_path" "destination_path"
+display hdfs data		hadoop fs -cat /filepath
+tail				hadoop fs -tail /filename
+copy dir hsfs to local		hadoop fs -copyToLocal "source_path" "destination_path"
+				give permission for local destination
+				sudo chmod -R 777 "destinationpath"
+				
+				hadoop fs -get 'source_path' 'destination_path'
+

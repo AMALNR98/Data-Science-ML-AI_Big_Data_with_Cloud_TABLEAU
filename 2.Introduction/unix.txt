@@ -1,0 +1,83 @@
+pwd
+---
+
+ls
+--
+
+cd
+----
+cd enter
+--------
+
+mkdir
+------
+	-p
+	
+rmdir : Use when the directory is empty
+	- for director with any file use inside it use \
+		 rm -r 
+		 -r, -R, --recursive   remove directories and their contents recursively
+
+	-p
+rm   =====>  
+---
+	remove files in directoy
+	Use when the directory is empty
+	- for director with any file use inside it use \
+		 rm -r
+		 
+		 
+How to copy a file
+------------------
+	
+	cp
+	----
+	
+	cp source_path destination_path
+	
+	3 Methords
+	----------
+		1) source_path destination_path same location
+			
+		2) source_path same location, destination_path different location
+		
+		3) source_path and destination_path are different location	
+
+
+How to copy a directory
+--------------------------
+		cp -R 
+		-----
+		
+		cd -r sourse_path destination_path
+		
+		
+How to edit a file
+-------------------
+
+	gedit
+	-----
+	
+	gedit filename/path
+		
+cat
+---
+
+
+
+
+head
+-----
+
+
+tail
+----
+
+sudo
+----
+	super user admin previlage
+
+su
+--
+switch user
+	su - username

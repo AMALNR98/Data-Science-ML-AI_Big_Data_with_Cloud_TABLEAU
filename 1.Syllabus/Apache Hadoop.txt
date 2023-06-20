@@ -1,0 +1,30 @@
+Apache Hadoop
+
+	- Bigdata
+	- Sources of Bigdata
+	- Application of Bigdata
+	- Facebook API
+	- 3 V of Bigdata
+	- RDBMS
+	- Linux commands
+	- Hadoop Architecture
+	- HDFS
+	- Single node cluster
+	- HDFS commands
+	- Yarn
+	- Mapreducing
+	- Mysql
+	- mysql table creation
+	- mysql queries
+	- Sqoop
+	- Sqoop architecture
+	- Sqoop import commands
+	- Sqoop export commands
+	- Sqoop jobs
+	- Hive
+	- Hive Architecture
+	- Table creation(Internal and external tables)
+	- Hive queries
+	- Partition tables
+	- Assignments
+	- Projects

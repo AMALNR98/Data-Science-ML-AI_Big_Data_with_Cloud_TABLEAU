@@ -1,0 +1,83 @@
+
+											PIG execution mode
+											-----------------
+
+
+
+
+	2 types of execution modes:
+
+		- local mode
+
+		- HDFS mode
+
+	LOCAL MODE:
+		
+		in local mode there is no need of HDFS
+		we can directy load form local  to pig and the result stored in local
+		It only used for testing
+		
+		for start local mode:
+
+			pig -x local
+	
+
+		
+
+									HDFS
+								-----------------
+								|		|
+								|		|	
+								-----------------
+
+
+
+		LINUX													PIG
+		-----------											-----------------
+		| customer|---------------------------------------------------------------------->		| Customer      |
+		|	  |<----------------------------------------------------------------------           |               |
+		-----------                                                                                  ---------------
+
+
+
+	HDFS MODE :
+
+		- data is stored in hdfd and anaysis in hdfs, then it sotred in HDFS
+		- It is used analysis purpose
+		- defalut mode is hdfs mode
+
+		- for stat pig in HDFS MODE
+
+			pig
+
+
+								hdfs
+							------------------
+							|cusotmer	 |
+			------------------------------>	|	         |------------------------------
+			|				------------------				|
+			|						^				|
+			|						|				|
+			|						|				~
+									|
+			Linux						|				pig
+		-----------------					|			---------------------
+		|customer 	|					|			| customer	    |
+		|		|					----------------------	|		    |
+		-----------------								--------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

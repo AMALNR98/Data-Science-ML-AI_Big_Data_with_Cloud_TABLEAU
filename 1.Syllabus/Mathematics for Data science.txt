@@ -1,0 +1,34 @@
+Mathematics for Data Science
+
+	- Linear Algebra:
+		 - Vector spaces
+		 - subspaces
+		 - span
+		 - basis and dimension
+	- Matrices and linear transformations:
+		- Linear map as a matrix
+		- rank and nullity of a matrix
+		- matrix multiplication
+		- inverse and transpose
+		- eigen values
+		- eigen vectors 
+	-Introductory statistics: 
+		-Mean
+		- median
+		- mode
+		- variance and standard deviation
+		- co-variance and correlation 
+	-Probability concepts: 
+		- Permutations and combinations
+		- unions and intersections
+		- random experiment
+		- sample space
+		- events
+		- probability axioms
+		- conditional probability
+		- Bayes’ theorem
+		- random variables
+		- Discrete and continuous distributions:
+			- Uniform
+			- Binomial
+			- Poisson and Normal distributions (sampling, central limit theorem)

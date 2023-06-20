@@ -1,0 +1,5 @@
+for proccss line by line data to word by word
+
+sample_text = LOAD '/system/sample.txt' as (word:chararray);
+word_data = FOREACH sample_text generate FLATTEN (TOKENIZE(word));
+

@@ -1,0 +1,42 @@
+mysql installation
+--------------------
+
+
+
+step 1:
+	sudo apt update
+step 2:
+	sudo apt install mysql-server
+
+
+step 3:
+	mysql configuration:
+
+		setting a password:
+			sudo mysql_secure_installation	
+				then give meduium
+					pwd : Password@123
+		
+			close terminal and open new terminal
+
+		 sudo mysql
+			
+			-then upcoming sql shell type
+
+			SELECT user,authentication_string,plugin,host From mysql.user;
+
+			-then type:
+			Alter USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password@123';
+
+			then exit shell using 'exit;'
+
+then the installation and configuration of mysql completed
+---------------------------------------------------------------------------------------
+
+
+start mysql
+------------
+
+mysql -u root -p
+	
+		pwd : Password@123

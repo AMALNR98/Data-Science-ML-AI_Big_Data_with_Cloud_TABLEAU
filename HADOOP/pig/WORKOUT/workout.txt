@@ -1,0 +1,74 @@
+sample4
+
+1) chennai work fname,lname,age
+
+	filterdata1 = FILTER sample4 by loc=='channai';
+
+2) chennai work age max 1 employee fname,lname,age
+
+	filter_date = FILTER sample4 by loc== 'chennai';
+	age_Date = OREDER filter_date by age dese;
+	limit_date
+	column_data = FOREACH limit_data gebereat fname,lname;
+
+	using 2 conditions
+	filter_data_mulitple_conditon = FILTER 	sampel4 by loc=='chennai' and age>23;
+
+customer4
+
+1. fname,lname,age,prof,
+
+2. age mxm 5 employees fname,lname,age,prog
+
+3. age min 3 employees fname,lname,age,prof
+
+4. India work age mxm, 3 employee fname,lame,age,prof
+
+5. india work agnd age above 50 fname,lname,age,prof
+
+6. doctor prof work age mxm one employee data
+
+7. uk work data colect
+
+8. us,age minimum 3 employee full data
+
+9. pilte prof work age mxm 1 empoyee full date
+
+10. pilot prof, age minumm 1 employee full data
+ 
+11. uk work age range 25 to 40 range
+
+
+13-16-2023
+
+sample1.txt
+
+1. id1>1 id2>2 useing split
+2. in sample4.txt
+	1.age above 23
+	2.age equal to 25
+	3.chennai work and age above 23
+		using single split function.
+	
+		SPLIT sample4 into age_data if age>23, age24 if age==24,chennai_data if place=="chennai" and age>23; 
+
+	
+
+
+
+
+
+
+
+
+ASSIGNMENT 1
+----------------
+
+customer1.txt
+
+
+
+
+
+
+

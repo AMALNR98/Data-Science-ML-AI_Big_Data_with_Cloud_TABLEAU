@@ -1,0 +1,11 @@
+Data Visualisation - TABLEAU
+
+	- Working with Tableau Public
+	- Connecting Data with Tableau
+	- Relationships in Tableau
+	- Filters in Tableau
+	- Adding Dimensions in Tableau
+	- Granularity in Tableau Analysis and Calculations in Tableau
+	- Plotting in Tableau
+	- Logical Operations on Tableau
+	- Visualisations in Tableau Dashboard and Stories

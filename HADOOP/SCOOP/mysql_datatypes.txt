@@ -1,0 +1,22 @@
+		data types
+	-------------------------------
+
+
+
+int
+
+bigint
+
+float
+
+double		- long float
+
+varchar() 	- string  (always give limit for varchar ,  eg: varchar(10)
+
+date		- yyyy-mm-dd format
+
+datetime	- yyyy-mm-dd hh:mm:ss
+
+ 
+
+

@@ -1,0 +1,266 @@
+		PIG
+		----
+	-it is an hadooop ecosystem
+	-is used for bigdata processing
+
+
+				Java					|				Piglattin
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+	-complex							|	scripting language
+									|
+	3 class : mapper,Reucer,Dirver					|	uses operators
+									|		load,store, group, group all, foreach, limit, filter, split
+									|
+	for create and program we had to use 80-100 lines of code       |	we can complete code with 4-5 lines of codes
+									|
+	Compilation is slow						|	Compilation is fast
+
+
+
+Pig download link : https://downloads.apache.org/pig/pig-0.17.0/
+
+
+
+											pig installation
+											------------------
+
+
+Step 1:
+	- copy extracted file to hduesr
+		
+		sudo cp -R /home/amal/Downloads/pig-0.17.0 ~/pig
+
+Step 2:
+	- give directory perimission
+		
+		sudo chmod -R 777 pig
+
+
+	- give ownership permission
+
+		sudo chown -R hduser : hadoop pig
+
+Step 3:
+	- give pig's path in bashrc
+
+		sudo nano ~/.bashrc
+
+		in coming window at bottom paste :
+			
+			export PIG_HOME=/home/hduser/pig
+			PATH="$PIG_HOME/bin":$PATH
+
+Step 4:
+	execute bashrc file
+		
+		source ~/.bashrc
+
+
+
+
+To veryfy pig type pig in shell 
+		then an grunt shell open
+										pig installation completed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+											PIG execution mode
+											-----------------
+
+
+
+
+	2 types of execution modes:
+
+		- local mode
+
+		- HDFS mode
+
+	LOCAL MODE:
+		
+		in local mode there is no need of HDFS
+		we can directy load form local  to pig and the result stored in local
+		It only used for testing
+		
+		for start local mode:
+
+			pig -x local
+	
+
+		
+
+									HDFS
+								-----------------
+								|		|
+								|		|	
+								-----------------
+
+
+
+		LINUX													PIG
+		-----------											-----------------
+		| customer|---------------------------------------------------------------------->		| Customer      |
+		|	  |<----------------------------------------------------------------------              |               |
+		-----------                                                                                      ---------------
+
+
+
+	HDFS MODE :
+
+		- data is stored in hdfd and anaysis in hdfs, then it sotred in HDFS
+		- It is used analysis purpose
+		- defalut mode is hdfs mode
+
+		- for stat pig in HDFS MODE
+
+			pig
+
+
+								hdfs
+							--------------------
+							|cusotmer	 |
+							|		|
+							------------------
+
+
+
+		
+			Linux
+		--------------------
+		|customer 	|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					PIG Datatypes
+					-------------
+
+
+	1. int 				eg : 26
+	2. long				eg : 1234908743
+	3. float			eg : 3.14
+	4. double			eg : 3.14534634
+	5. chararray (like string)	eg : abcd
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+							pig queries
+							------------
+
+
+	1. LOAD 
+		-for load data to pig
+		syntax :
+			
+			relationname = LOAD '/path' using PigStorage('data_seperation') as(schema);
+	
+
+				relationname 		: similar to variable name
+								eg : num = 10
+						     		name = 'amal'
+				'/path'	     		:
+				using	     		: keyword
+				PigStorage   		: function for load data
+				'data-seperation'	: data seperation may be ',' or ' ' serpareation
+				as			: keyword
+				schema			: (colname:dtype,colname:dtype,colname:dtype, ... );
+
+				eg :
+					pwd :	/luminr/sample1.txt
+						
+					1,2,3,4,5,6,7
+					2,3,4,5,6,6,6
+					5,4,3,2,5,3,2
+										
+
+					abc = LOAD '/luminar/sample1.txt' using PigStorage(',') as(id1,:int,id2:int,id3:int,id4:int,id5:int,id6:int,id7:int);
+
+	2. dump
+		for display the loaded data
+ 			syntax :
+				dump relation-name;
+					
+					ex : dump abc;
+
+
+	3. describe
+		
+		syntax:
+		describe relationname;
+
+			it is used to view schema of the relation
+
+			eg : descirbe sample4
+				op : sample4: {id: int,firstname: chararray,lastname: chararray,age: int,mob: long,place: chararray}
+
+	4. history
+
+		we can see the history of current shell
+
+
+	5. store
+
+		used to store result in hdfs
+
+		syntax:
+			STORE realationname into '/path/(new directory name)' using PigStorage('data seperation');
+ 						
+				when storing data always use data sepreation in ','
+			
+					STORE : keyword
+					relationname : the relation name that used for get output
+					into:
+					'/path' : hdfs or local ( the output saved in new directory, so pass an new name for directory
+
+			ex:
+				STORE sample1 into '/system/sample1result' using PigStorage(',');
+
+	6.group
+		
+		syntax
+			newrelationname = GROUP oldrelation by colname;
+		
+			group the data in one or more relations 
+			
+			eg:
+				agegroup = GROUP sample4 by age;
+
+					o/p :   (21,{(4,Preethi,Agarwal,21,9848022330,Pune),(1,Rajiv,Reddy,21,9848022337,Hyderabad)})
+						(22,{(3,Rajesh,Khanna,22,9848022339,Delhi),(2,siddarth,Battacharya,22,9848022338,Kolkata)})
+						(23,{(6,Archana,Mishra,23,9848022335,Chennai),(5,Trupthi,Mohanthy,23,9848022336,Bhuwaneshwar)})
+						(24,{(8,Bharathi,Nambiayar,24,9848022333,Chennai),(7,Komal,Nayak,24,9848022334,trivendram)})
+
+			group is always used for evaluation functions				 		
+				
+
+
+
+
+
+
+
+
+
+
+
+

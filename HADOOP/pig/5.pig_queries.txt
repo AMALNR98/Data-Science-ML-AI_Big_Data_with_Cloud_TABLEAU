@@ -1,0 +1,380 @@
+							pig queries
+							------------
+
+
+	1. LOAD 
+		-for load data to pig
+		syntax :
+			
+			relationname = LOAD '/path' using PigStorage('data_seperation') as(schema);
+	
+
+				relationname 		: similar to variable name
+								eg : num = 10
+						     		name = 'amal'
+				'/path'	     		:
+				using	     		: keyword
+				PigStorage   		: function for load data
+				'data-seperation'	: data seperation may be ',' or ' ' serpareation
+				as			: keyword
+				schema			: (colname:dtype,colname:dtype,colname:dtype, ... );
+
+				eg :
+					pwd :	/luminr/sample1.txt
+						
+					1,2,3,4,5,6,7
+					2,3,4,5,6,6,6
+					5,4,3,2,5,3,2
+										
+
+					abc = LOAD '/luminar/sample1.txt' using PigStorage(',') as(id1,:int,id2:int,id3:int,id4:int,id5:int,id6:int,id7:int);
+
+
+
+
+		for load text file:
+		------------------
+
+		syntax:
+
+			new_relation_name = LOAD '\path' as (word:chararrya);
+
+					here entire text taken as single column.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	2. dump
+		for display the loaded data
+ 			syntax :
+				dump relation-name;
+					
+					ex : dump abc;
+
+
+
+			Common Mistakes when load data:
+	
+				1. path
+					eg: home--------> /home
+				2. data seperation
+				3. 
+
+
+
+
+        3. describe
+
+                syntax:
+                describe relationname;
+
+                        it is used to view schema of the relation
+
+                        eg : descirbe sample4
+                                op : sample4: {id: int,firstname: chararray,lastname: chararray,age: int,mob: long,place: chararray}
+
+        4. history
+
+                we can see the history of current shell
+
+
+        5. store
+
+                used to store result in hdfs
+
+                syntax:
+                        STORE realationname into '/path/(new directory name)' using PigStorage('data seperation');
+
+                                when storing data always use data sepreation in ','
+
+                                        STORE : keyword
+                                        relationname : the relation name that used for get output
+                                        into:
+                                        '/path' : hdfs or local ( the output saved in new directory, so pass an new name for directory
+
+                        ex:
+                                STORE sample1 into '/system/sample1result' using PigStorage(',');
+	
+
+
+        6. group
+
+                syntax
+                        newrelationname = GROUP oldrelation by colname;
+
+                        group the data in one or more relations
+
+                        eg:
+                                agegroup = GROUP sample4 by age;
+
+                                        o/p :   (21,{(4,Preethi,Agarwal,21,9848022330,Pune),(1,Rajiv,Reddy,21,9848022337,Hyderabad)})
+                                                (22,{(3,Rajesh,Khanna,22,9848022339,Delhi),(2,siddarth,Battacharya,22,9848022338,Kolkata)})
+                                                (23,{(6,Archana,Mishra,23,9848022335,Chennai),(5,Trupthi,Mohanthy,23,9848022336,Bhuwaneshwar)})
+                                                (24,{(8,Bharathi,Nambiayar,24,9848022333,Chennai),(7,Komal,Nayak,24,9848022334,trivendram)})
+
+                        group is always used for evaluation functions
+	
+	7. group all
+		
+		syntax:
+			new_relation_name = GROUP old_relation all;
+
+		this is used for find total row count
+			
+			eg:
+				groupall_sample1 = GROUP sample1 all ;
+
+
+
+
+	8. foreach operator
+		used for collect only need columns
+
+		syntax:
+			new_relation_name = FOREACH old_realtaion generate colnames;
+		for multiple columns:
+			new_relation_name = FOREACH old-relation genereat col1,col1, ...;
+			
+			eg:
+				foreach_samp1 = FOREACH sample1 generate col1,col2;
+		
+		
+	9. limt operatior
+		used for collect wanted raws
+
+		syntax;
+			new_realtaion_name = LIMIT old_relation name number;
+			
+			eg:
+				limit0sample1 = LIMIT sample1 5;
+
+			
+	10. order operator
+		used for arrange data
+			sort:
+				asc,desc
+			
+			syntax:
+				for asc:
+					new_relation_name = ORDER old_relation_name by "col_name" asc;
+				for desc:
+					new_relation_name = ORDER old_relation_name by "col_name"  desc:
+
+
+	11. filter operator
+		
+		syntax:
+		
+			new_relation_name = FILTER old_relation_name by "column_name" condidtion;
+
+			conditions:
+				>,<.<=,>=,==,!=
+
+				eg:
+					filter_data_sample1 = FILTER sample1 by col1>2;
+
+				we can pass more than 1 condition using AND and or
+
+
+
+
+	12. split
+
+		syntax:
+		
+			SPLIT oldrelation into new_relation_1 if condition1,new_relation_2 if conditon2;
+			
+			Eg: 
+				SPLIT smaple1 into filter_Data1 if id1>1,filter data2 if id2>2;
+
+
+	13. Distinct operator
+
+		used to remove duplicate datas in dataset
+		here value is not removed only remove rows
+
+		syntax:
+			new_relation_name =  DISTINCT old_relation;
+
+
+
+Evaluating functions:
+---------------------
+
+1. COUNT
+2. MAX
+3. MIN
+4. AVG
+
+
+
+
+
+	1. COUNT()
+		
+		for count curresponding column
+
+		syntax:
+
+			new_relation_name = FOREACH old_relation_name genereate group,COUNT(main_relation);
+
+		here group is keyword
+
+		here we need to group data
+		then do count 
+		for that old_relation_name is grouped data and main_relation is origianl dataset
+
+
+			eg: group_sample4_by_locatin = GROUP sample4test by place;
+			    count_sample4_date = FOREACH group_sample4_by_locatin generate group, COUNT(sample4test);
+
+
+
+
+		when we create a count dataset it doesn't have coulmn name so give column name
+
+			syntax:
+				new_relation_name = FOREACH old_realtin_name genereate group ,COUNT(main_relation) as "column_name";
+
+		for find total raw count use group all instead of group	
+
+				eg:
+					grp_data = GROUP sample4 all;
+					cnt_data = FOREACH group   ?????????????????????
+
+
+
+
+
+
+	2. FLATTEN(TOKENIZE())
+
+		for line by line data converts to word by word
+
+		
+		syntax:
+
+			new_relation_name = FOREACH old_relation generate FLATTEN());
+			eg:
+				word_data = FOREACH sample_text generate FLATTEN (TOKENIZE(word));
+
+
+
+
+
+
+
+	3. MAX
+
+
+		to find maximum value in a column.
+
+		syntax:
+
+
+			new_relation_name = FOREACH oldrealion_name generate group, MAX(mainrelaion.column_name);
+
+
+		eg:
+			temperature = LOAD '/system/Temperature' using PigStorage(' ') as (year:int,temp:int);
+			temp_group = GROUP temperature by temp;
+			max_temp = FOREACH temp_group generate group, MAX(temperature.year) as max_tem;
+			dec_temp = ORDER max_temp by max_tem desc;
+
+
+
+
+	4. MIN
+
+		to find minimum valu in a column
+
+		syntax:
+
+			new_relation_name = FOREACH old_relation_name generate group,MIN(main_relation.column);
+
+
+
+	5. SUM
+
+
+		find total of coulumn
+		
+		syntax:
+			first perform group
+
+			new_reation_name = FOREACH old_realtion_name gernerate group, SUM(main_relaiton.coumn_name);
+
+		eg;
+
+			group_temp = GROUP temperature by year;
+			temp_sum = FOREACH group_temp generate group ,SUM(temperature.temp);
+
+
+	6. AVG
+
+		to find average of coulumn
+
+		syntax:
+
+			first perform group
+
+			new_realtion_name = FOREACH old_relaton_name genereate group, AVG(main_reltaion.column_name);
+
+		eg:
+			 group_temp = GROUP temperature by year;
+			 temp_avg = FOREACH group_temp generate group ,AVG(temperature.temp);
+
+
+
+
+matcher
+-------
+
+		eg:
+			names = FILTER moives by name matches 'A.*';
+
+
+
+
+
+
+
+
+upper_case & lower_case conversion:
+----------------------------------
+	syntax:
+		to LOWERCASE:		
+		new_relation_name = FOREACH old_relation_name genereate group LOWER(column_name);
+
+		to UPPERCASE;
+		new_relation_name = FOREACH old_relation_name genereate group UPPER(column_name);
+
+
+	eg:
+
+		lower_data = FOREACH sample4 genereate id,fname,lname,age,phno,LOWER(loc);
+
+UCFIRST:
+-------
+	first letter converted to uppercase
+
+	syntax:
+		new_relation_name = FOREACH old_relation_name genereate group USFIRST(column_name);
+
+LCFIRST:
+--------
+
+	syntax:
+		new_relation_name = FOREACH old_relation_name genereate group LCFIRST(column_name);
+
