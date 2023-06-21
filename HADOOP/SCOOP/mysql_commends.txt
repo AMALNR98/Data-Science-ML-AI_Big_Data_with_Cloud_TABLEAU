@@ -101,7 +101,7 @@
 
 
 	- addingin mutiple values
-		inser inot sample1(id1,id2,id3,id4,id5,id6,id7) values(12,212,232,242,232,233,232),(13,12,232,242,23,3456,4),(12,23,64,75,23,64,7,323);
+		inser into sample1(id1,id2,id3,id4,id5,id6,id7) values(12,212,232,242,232,233,232),(13,12,232,242,23,3456,4),(12,23,64,75,23,64,7,323);
 
 
 
@@ -128,4 +128,4 @@ do it properly (alle pani kittum)
 
 21. drop table
 
-	drop table_name;
+	drop table table_name;
