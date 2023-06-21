@@ -1,0 +1,5 @@
+
+workout 1:
+
+createing data base
+	create database luminar;
