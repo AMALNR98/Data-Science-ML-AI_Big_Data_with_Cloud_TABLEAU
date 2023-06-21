@@ -1,0 +1,175 @@
+switch to hduser
+
+start all daemons
+
+download scoop.tar.gz
+
+
+Setp 1:
+
+	extract tar file
+Step 2:
+	
+	copy extracted folder to hduser
+
+		sudo cp -R /home/amal/Downloads/Sqoop ~/sqoop
+
+Step 3:
+
+	give directory permission
+		
+		sudo chmod -R 777 sqoop
+
+Step 4:
+
+	give ownership permission
+
+		sudo chown hduser:hadoop sqoop
+
+Step 5:
+	set .bashrc file
+
+		sudo nano ~/.bashrc
+
+
+			at lower paste
+
+			export SQOOP_HOME=/home/hduser/sqoop
+			export PATH="$SQOOP_HOME/bin":$PATH
+			
+			and save
+			
+step 6:
+	execute bashrc file
+
+		source ~/.bashrc
+
+Step 7:
+	verify installation
+
+	sqoop version
+
+
+
+CONFIGURATION	
+
+step 1: 
+ 
+	cd sqoop
+	cd conf
+
+step 2:
+	copy sqoop-env-template.sh as sqoop-env.sh in same directory
+
+		sudo cp sqoop-env-template.sh sqoop-env.sh
+
+step 3:
+
+	edit sqoop-env.sh
+
+	in upcoming window set
+
+		#Set path to where bin/hadoop is available
+		export HADOOP_COMMON_HOME=/home/hduser/hadoop
+
+		#Set path to where hadoop-*-core.jar is available
+		export HADOOP_MAPRED_HOME=/home/hduser/hadoop
+
+
+	then cd
+
+
+step 4:
+	-hadoop configuration files
+
+		hadoop-env.sh
+		core-site.xml
+		hdfs-site.xml
+		mapred-site.xml
+		yarn-site.xml
+
+		in this edit edit mapre-site.xml and yarn-site.xml
+
+	- change location to hadoop
+
+		cd hadoop
+		cd etc
+		cd hadoop
+
+	- edit mapred-site.xml
+	
+		sudo nano mapred-site.xml
+
+		in upcoming window delete <configuration> to </confiuration>
+
+		and paste
+
+		<configuration>
+	<property>
+	  <name>mapred.job.tracker</name>
+	  <value>localhost:54311</value>
+	</property>
+	<property>
+	  <name>mapreduce.framework.name</name>
+	  <value>yarn</value>
+	</property>
+	<property>
+	  <name>mapreduce.admin.user.env</name>
+	   <value>HADOOP_MAPRED_HOME=/home/hduser/hadoop</value>
+	</property>
+	<property>
+	    <name>yarn.app.mapreduce.am.env</name>
+	     <value>HADOOP_MAPRED_HOME=/home/hduser/hadoop</value>
+	</property>
+	</configuration>
+		
+
+		and save
+	
+
+
+	- edit yarn-site.xml
+	
+		sudo nano yarn-site.xml
+
+
+		in upcoming window delete <configuration> to </configurarion>
+
+
+		and paste:
+
+
+		<configuration>
+
+		<!-- Site specific YARN configuration properties -->
+
+
+		<property>
+		               <name>yarn.nodemanager.aux-services</name>
+		               <value>mapreduce_shuffle</value>
+		</property>
+		<property>
+		    <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+		    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+		</property>
+
+		</configuration>
+
+
+
+step 5:
+
+	connect sqoop and mysql using msqlconnctor
+	(dont extract)
+
+		copy mysql connector to sqoop>lib
+
+			sudo cp /home/amal/Downloads/mysql-connector-java-5.1.47-bin.jar /home/hduser/sqoop/lib
+
+
+
+complered installation and configuration
+
+stop all daemons and start all daemons
+
+if all daemons are present then the process in success
