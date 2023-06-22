@@ -32,4 +32,4 @@ INSERT values to table		insert into table_name(column_names) values(values);
 VIEW data form table		select * form table_name;
 UPDATE col. values		update table_name colname='value' where condition;
 DELETE rows form table		delete form table_name wher condition;\
-DROP table			drop table_name;
+DROP table			drop table table_name;
