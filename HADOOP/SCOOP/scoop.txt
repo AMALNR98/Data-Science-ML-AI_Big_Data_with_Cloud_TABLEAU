@@ -48,5 +48,4 @@
 
 
 
-
-
+after installing scoop, then pig will not work
