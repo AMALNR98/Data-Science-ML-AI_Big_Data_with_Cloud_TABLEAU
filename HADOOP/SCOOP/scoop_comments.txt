@@ -1,0 +1,58 @@
+
+
+
+1. list-databases
+
+	syntax:
+		sqoop list-databases --connect jdbc:mysql://ipaddress/ --username mysql_username --password mysql_psd
+
+		-- 	: arguments
+		jdbe 	: java database connectivity
+		
+
+	eg : 
+		sqoop list-databases --connect jdbc:mysql://localhost/ --username root --password Password@123
+
+
+2. list tables inside database
+
+	syntax:
+		sqoop list-tables --connect jdbc:mysql://ipaddress/database_name --username mysql_username --passowrd mysql_psd
+
+	eg:
+		sqoop list-tables --connect jdbc:mysql://localhost/luminar --username root --password Password@123
+
+3. import table into hdfs
+	
+	when we import database to hdfs, the input is table, then the imported table in stored in hdfs is as text file
+
+	syntax:
+
+		sqoop import --connect jdbc:mysql://localhost/dbname --table table_name --username mysql_username --passowrd psd --m 1
+
+			--m : mapreduing algorithem execution
+			1   : replication factor
+
+	eg:
+		sqoop import --connect jdbc:mysql://localhost/luminar --table batches --username root --password Password@123 --m 1
+
+	we cannot import same table again, for that we have to rename table
+
+
+4. import all table to hdfs
+
+	syntax:
+
+		sqoop import-all-tables --connect jdbc:mysql://localhost/dbname --username user_name --password paswrd --m 1
+
+	(for delete tables delete form hdfs by hadoop fs -rm -R......)
+
+	eg:
+		sqoop import-all-tables --connect jdbc:mysql://localhost/luminar --username root --password Password@123 --m 1
+
+
+5. exclude-one table 
+
+	sqoop import-all-tables --connect jdbc:mysql://localhost/dbname --exclude-tables table_name --username user_name --password pswrd --m 1
+		
+		
