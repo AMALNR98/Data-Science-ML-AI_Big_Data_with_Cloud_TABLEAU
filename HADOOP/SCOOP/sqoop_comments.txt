@@ -22,7 +22,7 @@
 	eg:
 		sqoop list-tables --connect jdbc:mysql://localhost/luminar --username root --password Password@123
 
-3. import table into hdfs
+3. import database into hdfs
 	
 	when we import database to hdfs, the input is table, then the imported table in stored in hdfs is as text file
 
@@ -55,4 +55,30 @@
 
 	sqoop import-all-tables --connect jdbc:mysql://localhost/dbname --exclude-tables table_name --username user_name --password pswrd --m 1
 		
-		
+
+	for multiple rows
+
+		sqoop import-all-tables --connect jdbc:mysql://localhost/dbname --exclude-tables tblname1,tblname2, tblname3 --username root --password passwprd -m 1
+
+
+
+
+
+6. import 1 table into specific location
+
+	syntax:
+
+		sqoop import --connect jdbc:mysql://ipaddress/dbname --table table_name --username user_name password Password@123 --m 1 --target-dir /path/new_directory_name 
+
+	eg:
+		sqoop import --connect jdbc:mysql://localhost/luminar --table student --username root --password Password@123 --m 1 --target-dir /system/luminar_data
+
+
+7. for import all datas to an specific location
+
+	syntax:
+
+		sqoop import-all-tables --connect jdbc:mysql://ipaddress/dbname --username username --password password --m 1 --warehouse-dir /path
+
+
+
