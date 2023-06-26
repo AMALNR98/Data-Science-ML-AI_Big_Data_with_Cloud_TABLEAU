@@ -81,4 +81,40 @@
 		sqoop import-all-tables --connect jdbc:mysql://ipaddress/dbname --username username --password password --m 1 --warehouse-dir /path
 
 
+8. import subset of data
 
+	only wanted data wiil import by conditions
+
+	syntax:
+
+		sqoop import --connect jbdc:mysql://localhost/dbname --table table_name --where "condition" --username user_name --password pass_word --m 1 --taget-dir /path
+
+
+	eg:
+	1)	
+	sqoop import --connect jdbc:mysql://localhost/luminar --table student --where "age>22" --username root --password Password@123 --m 1 --target-dir /workout/result1
+
+	2)
+	sqoop import --connect jdbc:mysql://localhost/luminar --table student --where "prof='bigdat'" --username root --password Password@123 --m 1 --target-dir /workout/result2
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+9. export 
+
+	input will text file and output will be table
+	the text file from hdfs will exported to mysql
+	so, for that we have to create tabel in mysql
+
+	syntax:
+
+		sqoop export --connect jdbc:mysql://localhost/dbname --table table_name --usename user_name --password pass_word --export-dir /hdfs_file_path
+
+
+	eg:
+		create table in mysql
+		create table sample1_data(id1 int,id2 int, id3 int,id4 int);
+
+		then
+		sqoop export --connect jdbc:mysql://localhost/luminar --table sample1 --username root --password Password@123 --export-dir /workout/result1
