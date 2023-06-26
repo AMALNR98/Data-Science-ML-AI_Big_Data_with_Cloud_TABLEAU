@@ -1,0 +1,57 @@
+#empolyee_table import
+
+#salary mxm 5 employee fname, lname,age, location hdfs store
+
+# each age group count
+
+
+
+empoyee_hdfs import
+
+part-m-000 ---> local
+pig -x local
+data = Load
+
+
+A)
+
+1.copy file from hdfs to hduser
+
+	hadoop fs -copyToLocal /Assignment_sqoop/employee/part-m-00000 /home/hduser/hdfs_local/
+
+2. take pig and load data
+
+	employee = LOAD '/home/hduser/hdfs_local/part-m-00000' using PigStorage(',') as (age:int,designation:chararray,email:chararray,fname:chararray,id:int,lname:chararray,salary:int);
+
+3. group salary:
+
+	salary_group = GROUP employee by salary;
+4.
+
+
+
+    highest_salary = ORDER employee by salary desc;
+    higest_5 = LIMIT highest_salary 5;
+    wanted_columns = FOREACH higest_5 generate fname,lname,age;
+    age_group = GROUP employee by age;
+    age_group_count = FOREACH age_group generate group, COUNT(employee) as count;
+
+--------------------------------------------------------------------------------------------
+
+
+sqoop final workout
+
+
+
+#customer1
+1 each progession count
+result store into mysql table
+
+
+
+#temperatur
+1. calculate max temp in each year
+store in mysql table
+
+
+#
