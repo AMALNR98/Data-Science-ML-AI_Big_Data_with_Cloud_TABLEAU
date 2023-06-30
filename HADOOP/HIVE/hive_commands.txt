@@ -33,5 +33,53 @@
 			load data local inpath 'file-path' into table table_name;
 	
 		for HDFS
-		
+			load data inpath 'file-path' into table table_name;
+
+			in this the data is stored in /user/hive/warehouse
+			when we load the data into hive the data in hdfs is 'moved into hive'
+			so the file wiil removed from hdfs
+			it's an disadvantage
+
+			to avoid this problem
+
+
+hive tables
+----------------
+
+
+1.Internal table
+
+	create table table_name(schema) row format delimited fiels terminated by 'data-seperation' stored as text file;
+
+
+
+2.External table
+	to aviod above problem
+
+	create external table table_name(schema) row format delimited fields terminated by 'data-seperation' stored as text file;
+
+
+
+more HIVE queries
+-----------------
+
+1. select particular columns
+
+	select column_names from table table_name;
+
+	eg;
+		select id1,id2,id3 from sample1;
+
+2. filter data
+
+	select colname form table_name wher condition
+	
+	eg:
+		select fname,lname,age from customer1 where age>30;
+
+3.
+
+
+
+
 
