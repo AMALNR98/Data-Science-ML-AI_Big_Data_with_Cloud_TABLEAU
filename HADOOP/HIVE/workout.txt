@@ -1,0 +1,19 @@
+customer1
+id,fname,lname,age,prof,loc
+1.age==24 ; id,fname,age,loc
+2. loc == "India",fname,lname, loc,age
+3.age>24 and age <50 ; fname, lname, age, prof
+4.prof == 'pilot' and age>25;fname, lname,age,prof
+5. age>40 and loc='india' id,fname, lname,age
+
+
+select fname,lname,age from customer1;
+select fname,lname,age from customer1 where age>30;
+select id,age,lname,age,job,loc from customer1;
+select id,fname,lname,place from customer1 where age==24;
+select fname,lname,age,job from customer1 where age>24 AND age<50;
+select fname,lname,age,job from customer5 where job=='pilot';
+select fname,lname,age,job from customer1 where age>40 AND place=='india';
+
+
+
