@@ -49,7 +49,7 @@ hive tables
 
 1.Internal table
 
-	create table table_name(schema) row format delimited fiels terminated by 'data-seperation' stored as text file;
+	create table table_name(schema) row format delimited fields terminated by 'data-seperation' stored as text file;
 
 
 
@@ -72,7 +72,7 @@ more HIVE queries
 
 2. filter data
 
-	select colname form table_name wher condition
+	select colname form table_name where condition
 	
 	eg:
 		select fname,lname,age from customer1 where age>30;
