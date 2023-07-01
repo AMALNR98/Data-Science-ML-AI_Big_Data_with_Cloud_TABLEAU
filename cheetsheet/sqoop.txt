@@ -1,0 +1,16 @@
+import
+-------
+list databases				sqoop list-databases --connect jdbc:mysql://ipaddress/ --username mysql_username --password mysql_password 
+list tables 				sqoop list-tables --connect jdbc:mysql://ipaddress/database_name --username user_name	--password mysql_password
+import database into HDFS		sqoop import --connect jdbc:mysql://ipaddress/db_name --table table_name --username mysql_username --password mysql_password --m 1
+import all table to HDFS		sqoop import-all-tables --connect jdbc:mysql://localhost/dbname --username user_name --password mysql_password --m 1
+exclude one table			sqoop import-all-tables --connect jdbc:mysql://loclahost/dbname --exclude-tables table_name --username user_name --password mysql_password --m 1
+import on table inot specific location	sqoop import --connect jdbc:mysql://ipaddress/dbname --table table_name --username user_name password mysql_password --m 1 --target-dir /path/new_directory_name
+import all datas to an specific loation	sqoop import-all-tables --connect jdbc:mysql://ipaddress/dbname --username user_name --password --m 1 --warehouse-dir /path
+import subset of data 			sqoop import --connect jdbc:mysql://ipaddress/dbname --table table_name --where "condition" --username user_name --password pass_word --m 1 --target-dir /path
+
+export
+-------
+export database				sqoop export --connect jdbc:mysql://localhost/dbname --table table_name --username username --password mysql_password --export-dir /hdfs_file_path
+
+
