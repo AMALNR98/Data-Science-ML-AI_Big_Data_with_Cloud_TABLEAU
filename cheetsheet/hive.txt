@@ -1,0 +1,19 @@
+show database		show databases;
+create database		create database database_name;
+delete database		drop datbase database_name;
+select database		use database_name;
+create table		create table table_name(schema) row format delimiteed fields by 'data-seperation' stored as textfile;
+load data to table 	
+		for local
+			load data local inpath 'file-path' into table table_name;
+		for hdfs
+			load data inpath 'file-path' into table table_name;
+
+hive tables
+------------
+intrnal table		create table table_name(schema) row format delimited fields terminated by 'data-seperation' stored as textfile;
+external table		create external table table_name(schema) row format delimited fields terminated by 'data-seperation' stored as textfile;
+
+
+select particular table		select column_names from table table_name;
+filter dat			select column_name from table_name where condition
