@@ -1,0 +1,57 @@
+Hadoop
+--------
+
+Hadoop is an open-source framework designed for distributed storage and processing of large-scale data sets. It provides a reliable and scalable platform that allows for the processing of big data across clusters of computers.
+
+At its core, Hadoop consists of two main components:
+
+    Hadoop Distributed File System (HDFS): HDFS is a distributed file system that provides high-throughput access to data across multiple machines. It is designed to store large data sets across multiple nodes in a cluster, providing fault tolerance and data redundancy.
+
+    MapReduce: MapReduce is a programming model and processing framework that allows for distributed data processing in parallel. It divides the data into smaller chunks and distributes them across the nodes in a cluster, where the processing is performed in parallel. MapReduce is responsible for managing the computation and data movement across the cluster.
+
+Hadoop enables the processing of massive data sets by distributing the workload across a cluster of commodity hardware. It provides fault tolerance, as the data and computation are replicated across multiple nodes. Hadoop is highly scalable and can handle large volumes of data efficiently.
+
+In addition to HDFS and MapReduce, Hadoop also includes other ecosystem components such as YARN (Yet Another Resource Negotiator), which manages cluster resources, and various higher-level data processing frameworks like Apache Hive, Apache Pig, Apache Spark, and more, which provide easier abstractions and tools for data analysis and processing on top of the Hadoop platform.
+
+Overall, Hadoop is widely used in big data analytics and is known for its ability to handle large-scale data processing tasks in a distributed and fault-tolerant manner.
+
+
+
+various higher-level data processing frameworks
+-----------------------------------------------------------------
+
+Apache Pig
+----------
+
+Apache Pig is a high-level data flow scripting language and execution framework built on top of Apache Hadoop. It provides a platform for processing and analyzing large datasets in a distributed computing environment.
+
+Pig simplifies the process of writing complex MapReduce tasks by providing a SQL-like language called Pig Latin. Pig Latin allows developers to express data transformations, manipulations, and analyses using a set of high-level operators and functions. It abstracts away the low-level details of writing MapReduce programs, making it easier for developers to work with big data.
+
+With Apache Pig, you can perform a wide range of data processing tasks, including:
+
+    Data Extraction: Pig allows you to load data from various sources such as Hadoop Distributed File System (HDFS), Apache HBase, Apache Cassandra, and more.
+
+    Data Transformation: Pig provides operators like FILTER, GROUP BY, JOIN, ORDER BY, and others to transform and manipulate the data.
+
+    Data Analysis: Pig supports user-defined functions (UDFs), which allow you to write custom functions in Java, Python, or other programming languages to perform advanced data analysis tasks.
+
+    Data Storage: Pig supports storing processed data back into HDFS, Apache HBase, Apache Cassandra, and other storage systems.
+			
+
+		Apache Cassandra:Apache Cassandra is a highly scalable and distributed NoSQL database management system designed to handle large amounts of data across multiple commodity servers,
+				 providing high availability and fault tolerance. It was originally developed at Facebook and later open-sourced and maintained by the Apache Software Foundation.
+		Apache HBase	:Apache HBase is a distributed, column-oriented NoSQL database built on top of the Hadoop ecosystem. It provides real-time read and write access to large datasets,
+				 enabling fast and scalable storage and retrieval of structured data.
+
+
+
+
+
+
+Pig scripts written in Pig Latin are compiled into a series of MapReduce jobs, which are then executed on a Hadoop cluster. Pig optimizes the execution of these jobs by automatically generating the necessary MapReduce code behind the scenes.
+
+Apache Pig is widely used in big data processing and analysis scenarios where complex data transformations and analyses are required. It provides a higher level of abstraction compared to writing MapReduce code directly, making it easier and faster to develop data processing workflows.
+
+
+
+
