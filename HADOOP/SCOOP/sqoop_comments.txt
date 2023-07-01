@@ -87,7 +87,7 @@
 
 	syntax:
 
-		sqoop import --connect jbdc:mysql://localhost/dbname --table table_name --where "condition" --username user_name --password pass_word --m 1 --taget-dir /path
+		sqoop import --connect jbdc:mysql://localhost/dbname --table table_name --where "condition" --username user_name --password pass_word --m 1 --target-dir /path
 
 
 	eg:
