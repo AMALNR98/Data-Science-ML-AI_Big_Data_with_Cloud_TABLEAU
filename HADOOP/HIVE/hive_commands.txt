@@ -46,6 +46,7 @@
 hive tables
 ----------------
 
+internal tables vs external table??????
 
 1.Internal table
 
@@ -77,9 +78,36 @@ more HIVE queries
 	eg:
 		select fname,lname,age from customer1 where age>30;
 
-3.
 
 
+------------------------------------------------------------------------------------------
+					VIEW TABLE
+
+in hive we can only process data
+we can't store data in HDFS.
+So we can store data in hive as table but it is not visible in HDFS, this table is known as "view table"
 
 
+1. create view table
+ 	create view view_table_name as query;
 
+		eg:create view chennai_data as select fname,lname,age from sample4 where location=='Chennai';
+
+2.ORDER BY
+
+	select * from table_name order by colname asc;
+
+	eg:
+
+		select * from sample4 order by age asc;
+
+	we can also order string, small letters and block letters are seperatly sorted
+		eg:select * from sample4 order by fname asc;
+3.LIMIT operator
+
+	select * from table_name limit number;
+
+	eg:
+		select * form sample4 limt 4;
+
+select > where > order > limit
