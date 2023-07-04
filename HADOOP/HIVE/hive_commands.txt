@@ -93,6 +93,12 @@ So we can store data in hive as table but it is not visible in HDFS, this table 
 
 		eg:create view chennai_data as select fname,lname,age from sample4 where location=='Chennai';
 
+
+ DROP view table
+
+        drop view view_table_name;
+
+
 2.ORDER BY
 
 	select * from table_name order by colname asc;
@@ -111,3 +117,46 @@ So we can store data in hive as table but it is not visible in HDFS, this table 
 		select * form sample4 limt 4;
 
 select > where > order > limit
+
+4.DISTINCT()
+	for remove duplicate rows and colloect unique rows
+	
+	select distinct * form table_name;
+
+		eg:select distinct * from customer1;
+
+
+
+EVALUATING FUNCTIONS
+--------------------
+for perform evaluvation function we have to group dataset
+
+
+
+1. COUNT
+
+	1. Row count
+		for row count we don't have to group data
+
+		select count(*) from table_name;
+
+			eg: select count(*) from customer1;
+
+
+	2. Each column count
+		
+		select column_name, count(*) from table_name group by column_name;
+
+			eg: select location, count(*) from sample4 group by location;
+
+			-----------------------------------------------------------------------------------------
+			|select job, count(*) as job_count from customer1 group by job order by job_count desc;  | important example
+			-----------------------------------------------------------------------------------------
+			
+
+2. MAX
+3. MIN
+4. AVG
+5. SUM
+
+these functions are same as MySQL queries
