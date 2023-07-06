@@ -116,7 +116,7 @@ So we can store data in hive as table but it is not visible in HDFS, this table 
 	eg:
 		select * form sample4 limt 4;
 
-select > where > order > limit
+select > count > where > order > limit
 
 4.DISTINCT()
 	for remove duplicate rows and colloect unique rows
@@ -154,9 +154,23 @@ for perform evaluvation function we have to group dataset
 			-----------------------------------------------------------------------------------------
 			
 
-2. MAX
-3. MIN
+2. MIN
+
+	select column_name,min(column_name) from table_name group by column_name;
+
+		eg: select age,min(age) from customer1 group by age;
+			or
+		select job,min(age) from customer1 group by job;
+
+3. MAX
+	select column_name,max(column_name) from table_name group by column_name;
 4. AVG
+	select coulmn_name,avg(column_name) from table_name group by column_name;
 5. SUM
+	select column_name,sum(column_name) from table_name group by coulmn_name;
+
 
 these functions are same as MySQL queries
+
+
+
