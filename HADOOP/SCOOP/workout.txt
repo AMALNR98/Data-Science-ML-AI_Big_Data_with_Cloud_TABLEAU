@@ -55,3 +55,27 @@ store in mysql table
 
 
 #
+
+
+sqoop job 
+---------------
+
+create job for employee table 5:
+sqoop job --create emp_job5 -- import --connect jdbc:mysql://localhost/jan_bigdata -- table employee --username root --password Password@123 --m 1 target-dir /directory
+sqoop job --list
+sqoop job --exec emp_job5
+
+
+workout:
+
+luminar
+---------
+
+Placement == hdfs import
+
+sqoop job --create placement_job -- import-all-tables --connect jdbc:mysql://localhost/luminar --exclude_table placement --username root --password Password@123 --m 1 warehouse-dir /directory
+sqoop job --list
+sqoop job  -exec placement_job
+
+
+

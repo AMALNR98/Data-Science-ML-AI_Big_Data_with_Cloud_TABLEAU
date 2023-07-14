@@ -222,18 +222,37 @@ join operation
 		2) Left outer joining
 			A left outer join returns all the rows from the left table and the matching rows from the right table. 
 			If there is no match, NULL values are included for columns from the right table.
+			-------------------------------------------------------------------------------
+
+			eg : select c.name,c.age,o.dat,o,amount from custom c left outer join order o on(c.id=o.id);
+
+			
+
 		3) Right outer joining
 			A right outer join returns all the rows from the right table and the matching rows from the left table. 
 			If there is no match, NULL values are included for columns from the left table.
+			-------------------------------------------------------------------------------
+
+			eg : select c.name,c.age,o.dat,o,amount from custom c right outer join order o on(c.id=o.id);
 
 		4) Full outer joining
-			A full outer join returns all the rows from both tables and includes NULL values for columns where there is no match.
+			A full outer join returns all the rows from both tables and includess NULL values for columns where there is no match.
 	
 
+			eg : select c.name,c.age,o.age,o.dat,o.amount form custom x full outer join order o on (c.id=o.id);
 
 
 
 
 
+Dealing with header_tag file
+------------------------------
+
+
+header tags shuold remove when create table
+
+	syntax:
+
+		create table table_name(schema) row format delimited fields terminated by ',' stored as textfile table_properties("skip.header.line.count"="1");
 
 

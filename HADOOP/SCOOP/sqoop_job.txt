@@ -1,0 +1,26 @@
+Sqoop jobs in Apache Sqoop are a way to define and manage recurring data transfer tasks between relational databases and Hadoop. 
+Sqoop jobs simplify the process of importing or exporting data by allowing you to save the import/export configurations as reusable job definitions.
+
+create job
+	syntax :
+		sqoop job --create job_name -- query
+
+	eg:
+		sqoop job --create emp_data -- import --connect jdbc:mysql://localhost/luminar --table employee --username root --password Password@123 --m 1 target-dir /directory
+
+to verify if job created
+	
+	syntax:
+		sqoop job --list
+
+for show jobs content
+
+	syntax:
+		sqoop job --show job -name
+
+execute job
+	
+	synatax:
+		sqoop job --ecex job_name
+
+if there is any mistakes in query we should edit qurey and also edit job name
