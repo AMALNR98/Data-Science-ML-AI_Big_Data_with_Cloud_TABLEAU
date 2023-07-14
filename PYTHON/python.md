@@ -31,7 +31,7 @@ languages: python, R,javascript
 
 Static typed programming languages
 ----------------------------------
-it initially act as synamic programming language, 
+it initially act as dynamic programming language, 
 
 	eg:
 		var num;
@@ -45,25 +45,25 @@ languages: scala
 topics covered
 --------------
 core python
-1. identifiers
-2. input and output functions
-3. operators
-4. flow controlls
-5. functions
-6. collection
-7. file operration
+	1. identifiers
+	2. input and output functions
+	3. operators
+	4. flow controlls
+	5. functions
+	6. collection
+	7. file operation
 
 Advaced python
-8. OPPs concetpst
-9. Functional progarmming
-10. Regular expression
+	8. OPPs concetpst
+	9. Functional progarmming
+	10. Regular expression
 
 
 
 Idetntifiers
 ------------
-	name, variables, function neam, class name
-input and output funcdtions
+	name, variables, function name, class name
+input and output functions
 -----------------------------
 	output functions: to display output
 	input functions: read values from console or user
@@ -100,4 +100,23 @@ flow controlls
 	1. Decision making(id,id..else,if..elif..else)
 	2. Looping(for, while)
 	3. Jumping(break,continue,pass)
-		 
+functions
+----------
+	To reduce the lenght of the code.
+collection
+----------
+	collection of hetrogenous data
+	1. variable
+	2. array : collection of homogenous data refered by using common name
+		   size is fixed
+		   not supported hetrogenous data
+		   so we use python collectors
+
+	list,tupple,set,dictionarty are the python collectors
+file operation
+--------------
+	files are used to store data
+	read: to read data from a file (r)
+	write: to write data into a file (w)
+	append : to update a file (a)
+
