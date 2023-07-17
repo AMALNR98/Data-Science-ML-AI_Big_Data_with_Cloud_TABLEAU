@@ -29,6 +29,10 @@ Dynamic typed programing languages
 there is no need for pass datatype for variable.
 languages: python, R,javascript
 
+	eg:
+ 		num =10
+		num = 'luminar'
+
 Static typed programming languages
 ----------------------------------
 it initially act as dynamic programming language, 
