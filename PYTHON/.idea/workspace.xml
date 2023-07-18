@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Python_Basics/idetifiers/demo_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Basics/idetifiers/identifiers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python.md" beforeDir="false" afterPath="$PROJECT_DIR$/python.md" afterDir="false" />
-    </list>
+    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
