@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="new files added" />
+    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="new files added">
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/multiplication_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/reverse_of_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690357729517</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690358587194</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690358587194</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
