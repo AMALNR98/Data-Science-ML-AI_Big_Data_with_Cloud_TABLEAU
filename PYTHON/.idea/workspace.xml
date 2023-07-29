@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="new files added">
-      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/multiplication_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/reverse_of_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Jumping Statements/jumpint_statements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/30-1_print.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/factorial_using_for_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/for_loop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/lower_upper_odd_even_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/lower_upper_print.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/prime_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/print_5_20.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/For Loop/sum_of_numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/pattern_7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/pattern_8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +36,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2SYUgDYDuAOe7F9unFqKxSCLx02" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -104,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690358587194</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690360701680</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690360701680</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
