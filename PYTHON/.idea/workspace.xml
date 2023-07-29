@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="new files added">
-      <change beforePath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Jumping Statements/jumpint_statements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Jumping Statements/jumpint_statements.py" afterDir="false" />
-    </list>
+    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="new files added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +128,63 @@
       <option name="project" value="LOCAL" />
       <updated>1690609463096</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610134845</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610134846</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610146276</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610146276</updated>
+    </task>
+    <task id="LOCAL-00012" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610299962</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610299962</updated>
+    </task>
+    <task id="LOCAL-00013" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610331938</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610331938</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610344269</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610344269</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610600307</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610600307</updated>
+    </task>
+    <task id="LOCAL-00016" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1690610604272</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610604272</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
