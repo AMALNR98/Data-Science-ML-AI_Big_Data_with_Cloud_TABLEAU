@@ -10,3 +10,9 @@ def function_Name(arguments):
 
 #function_Call()  ====> function_Name()
 """
+
+# Methods
+#--------------
+# 1) Function without argument and no return type
+# 2) Function with argument and no return type
+# 3) Function with argument and return type
