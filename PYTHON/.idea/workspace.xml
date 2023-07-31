@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="new files added">
-      <change afterPath="$PROJECT_DIR$/Python_Basics/Functions/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Basics/interview questions/interview_questions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Basics/interview questions/prime_numbers_between_an_limit.py" afterDir="false" />
+    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="Function methods">
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Functions/Method_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Functions/methord_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Functions/mutilication_of_3_numbers_by_methord_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690610626430</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="function syntax">
+      <option name="closed" value="true" />
+      <created>1690787782013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690787782013</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Function methods">
+      <option name="closed" value="true" />
+      <created>1690787978298</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690787978298</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +229,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="new files added" />
+    <MESSAGE value="function syntax" />
+    <MESSAGE value="Function methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Function methods" />
   </component>
 </project>
