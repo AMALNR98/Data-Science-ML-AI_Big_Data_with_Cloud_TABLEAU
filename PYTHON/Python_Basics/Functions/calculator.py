@@ -39,19 +39,20 @@ choice = int(input("Enter the choice"))
 
 if choice == 1:
     sum = addition(number_1, number_2)
-    print(f"The sum is {sum}")
+    print(f"T{number_1} + {number_2} = {sum}")
 
 elif choice == 2:
     div = subtraction(number_1, number_2)
-    print(f"The result is {div}")
+    print(f"{number_1} - {number_2} = {div}")
 
 elif choice == 3:
     mul = multiplication((number_1, number_2))
-    print(f"The result is {mul}")
+    print(f"{number_1} * {number_2} = {mul}")
 
 elif choice == 4:
-    div = division((number_1, number_2))
-    print(f"The result is {div}")
+    print(f"{number_1} - {number_2} = {division(number_1, number_2)}")
 
 else:
     print("Invalid choice")
+
+
