@@ -7,7 +7,7 @@
 
 # It also called data structures
 
-# 4 typer of collections
+# 4 types of collections
 
 # 1. List
 # 2. Tuple
@@ -17,8 +17,9 @@
 
 # Properties
 
-# 1. How to define
-# 2. Heterogeneous dat supported or not
-# 3. Insertion order is preserved or not?
-# 4 Duplicates values are allowed or not?
+# 1. How to define a collection
+# 2. Heterogeneous data supported or not
+# 3. Insertion node is preserved or not?
+# 4. Duplicates values are allowed or not?
 # 5. Mutable or immutable
+
