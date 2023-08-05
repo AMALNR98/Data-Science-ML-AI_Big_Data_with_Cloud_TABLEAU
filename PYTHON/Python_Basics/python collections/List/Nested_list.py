@@ -15,6 +15,17 @@ employee_list = [[101, 'vinay', 'p', 28, 'bigdata', 1000],
 
 # age above 28 fname,lname,age
 
+# for i in employee_list:
+#     if i[3] > 28:
+#         print(i[1], i[2], i[3])
+#         # print(i[1:4])
+
+# bigdata prof fname,lname,age,prof
+# for i in employee_list:
+#     if i[4]== 'bigdata':
+#         print(i[1:5])
+
+# python prof fname,age,salary
 for i in employee_list:
-    if i[3] > 28:
-        print(i[1], i[2], i[3])
+    if i[4] == 'python':
+        print(i[1], i[3], i[5])
