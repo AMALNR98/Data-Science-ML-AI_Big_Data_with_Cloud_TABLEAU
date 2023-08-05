@@ -9,9 +9,12 @@ employee_list = [[101, 'vinay', 'p', 28, 'bigdata', 1000],
                  [107, 'sabir', 'j', 37, 'bigdata', 1550],
                  [108, 'vishnu', 'n', 31, 'bigdata', 1250],
                  ]
-print(employee_list)
-for i in employee_list:
-    print(i)
+# print(employee_list)
+# for i in employee_list:
+#     print(i)
 
 # age above 28 fname,lname,age
 
+for i in employee_list:
+    if i[3] > 28:
+        print(i[1], i[2], i[3])
