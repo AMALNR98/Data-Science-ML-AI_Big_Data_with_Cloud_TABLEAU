@@ -26,6 +26,22 @@ employee_list = [[101, 'vinay', 'p', 28, 'bigdata', 1000],
 #         print(i[1:5])
 
 # python prof fname,age,salary
+# for i in employee_list:
+#     if i[4] == 'python':
+#         print(i[1], i[3], i[5])
+
+# worked in bigdata and age above 28 fname, lanme, age
+
+# for i in employee_list:
+#     if i[4] == 'bigdata' and i[3] < 28:
+#         print(i[1], i[2], i[5])
+
+# Total salar
+sum_ = 0
 for i in employee_list:
-    if i[4] == 'python':
-        print(i[1], i[3], i[5])
+    sum_ += i[5]
+    #sum_ += i[-1]
+print(sum_)
+
+
+# sum, max,min is not applicable in nested list
