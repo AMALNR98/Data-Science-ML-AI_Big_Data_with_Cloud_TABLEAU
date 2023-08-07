@@ -36,12 +36,11 @@ employee_list = [[101, 'vinay', 'p', 28, 'bigdata', 1000],
 #     if i[4] == 'bigdata' and i[3] < 28:
 #         print(i[1], i[2], i[5])
 
-# Total salar
+# Total salary
 sum_ = 0
 for i in employee_list:
     sum_ += i[5]
-    #sum_ += i[-1]
+    # sum_ += i[-1]
 print(sum_)
-
 
 # sum, max,min is not applicable in nested list
