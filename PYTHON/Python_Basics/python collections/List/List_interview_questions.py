@@ -17,7 +17,7 @@ lst_1 = [4, 10, 6, 20, 15, 25, 12, 8]
 
 # ans:
 empty_lst = []
-result = sum(lst_1)
+result = add(lst_1)
 for i in lst_1:
     empty_lst.append(result - i)
 print(empty_lst)
@@ -45,3 +45,19 @@ for i in string:
     if i in vowels:
         print(i)
 
+# question 6: find count of vowels
+
+
+add = 0
+for i in string:
+    if i in vowels:
+        add += 1
+
+print(add)
+
+# count number of non-vowels
+sum_of = []
+for i in string:
+    if i not in vowels:
+        sum_of.append(i)
+print(len(sum_of))
