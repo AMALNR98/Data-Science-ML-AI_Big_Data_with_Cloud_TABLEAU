@@ -35,5 +35,13 @@ lst_2 = [1, 5, 6, 3, 2, 4, 5, 2, 1, 6, 7, 8, 9, 3, 1, 7, 8, 9, 11, 9, 6, 5, 4, 3
 
 # question 4:
 lst_4 = [1, 4, 6, 7, 9, 11, 15, 20, 25, 40, 50]
-print(15 not in lst_4) # if 15 not in lst_4 it will print "False"
+print(15 not in lst_4)  # if 15 not in lst_4 it will print "False"
 print(1 in lst_4)  # if 1 is in lst_4 it will print "True"
+
+# question 5:
+string = 'luminartechnolab'
+vowels = 'aeiouAEIOU'
+for i in string:
+    if i in vowels:
+        print(i)
+
