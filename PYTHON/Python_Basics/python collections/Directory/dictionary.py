@@ -12,3 +12,9 @@ age : 28
 prof : bigdata
 """
 
+dictionary_example = {'id': 101, 'first_name': 'vinay', 'last-name': 'b', 'age': 28, 'prof': 'bigdata'}
+print(dictionary_example)
+
+# it support heterogeneous data
+
+# Insetion order is preservied
