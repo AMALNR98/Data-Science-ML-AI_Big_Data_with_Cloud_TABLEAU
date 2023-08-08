@@ -17,4 +17,8 @@ print(dictionary_example)
 
 # it support heterogeneous data
 
-# Insetion order is preservied
+# Insertion order is preserved
+
+# duplicate key is not supported
+dictionary_duplicate = {'id': 101, 'first_name': 'vinay', 'last-name': 'b', 'age': 28, 'prof': 'bigdata', 'age' : 30}
+print(dictionary_duplicate)
