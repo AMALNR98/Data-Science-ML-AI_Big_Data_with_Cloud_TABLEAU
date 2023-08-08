@@ -19,4 +19,3 @@ print(set_4)
 set_5 = set_1.difference(set_2)
 print(set_5)
 
-
