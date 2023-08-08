@@ -20,5 +20,9 @@ print(dictionary_example)
 # Insertion order is preserved
 
 # duplicate key is not supported
-dictionary_duplicate = {'id': 101, 'first_name': 'vinay', 'last-name': 'b', 'age': 28, 'prof': 'bigdata', 'age' : 30}
-print(dictionary_duplicate)
+dictionary_duplicate_key = {'id': 101, 'first_name': 'vinay', 'last-name': 'b', 'age': 28, 'prof': 'bigdata', 'age': 30}
+print(dictionary_duplicate_key)
+
+# dictionary supports duplicate values
+dictionary_duplicate_value = {'id': 101, 'first_name': 'vinay', 'last-name': 'vinay', 'prof': 'bigdata', 'age': 30}
+print(dictionary_duplicate_value)
