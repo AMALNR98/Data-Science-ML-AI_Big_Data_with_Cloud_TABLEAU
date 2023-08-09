@@ -17,4 +17,6 @@ for element in data:
         dictionary_1[element] = 1
     else:
         dictionary_1[element] += 1
-print(dictionary_1)
+# print(dictionary_1)
+for k, v in dictionary_1.items():
+    print(k, ",", v)
