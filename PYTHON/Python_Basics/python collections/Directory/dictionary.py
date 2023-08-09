@@ -53,4 +53,14 @@ print("Add new key-value pair")
 dictionary_duplicate_value['total'] = 75
 print(dictionary_duplicate_value, "\n")
 
-#
+# To check a key weather present or not
+print('To check a key weather present or not')
+print('first_name' in dictionary_duplicate_value)
+print('subject' not in dictionary_duplicate_value, '\n')
+
+# How to delete a key_value pair
+print('delete key-value pair')
+del dictionary_duplicate_value['total']
+print(dictionary_duplicate_value, '\n')
+
+
