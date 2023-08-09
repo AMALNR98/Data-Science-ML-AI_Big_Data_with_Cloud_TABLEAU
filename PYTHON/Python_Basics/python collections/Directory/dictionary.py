@@ -32,4 +32,8 @@ print(dictionary_duplicate_value)
 
 # To collect a particular value use it's corresponding value
 print(dictionary_duplicate_value['age'])
-print(dictionary_duplicate_value['first_name'])
+print(dictionary_duplicate_value['first_name'], "\n")
+
+# To print key value pair
+for i in dictionary_duplicate_value:
+    print(i, ",", dictionary_duplicate_value[i])
