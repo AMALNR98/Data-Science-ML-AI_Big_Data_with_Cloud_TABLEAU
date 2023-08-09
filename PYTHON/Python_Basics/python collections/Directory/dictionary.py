@@ -26,3 +26,10 @@ print(dictionary_duplicate_key)
 # dictionary supports duplicate values
 dictionary_duplicate_value = {'id': 101, 'first_name': 'vinay', 'last-name': 'vinay', 'prof': 'bigdata', 'age': 30}
 print(dictionary_duplicate_value)
+
+# dictionary is mutable
+
+
+# To collect a particular value use it's corresponding value
+print(dictionary_duplicate_value['age'])
+print(dictionary_duplicate_value['first_name'])
