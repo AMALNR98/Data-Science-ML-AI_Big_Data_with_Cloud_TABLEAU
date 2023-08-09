@@ -30,10 +30,27 @@ print(dictionary_duplicate_value)
 # dictionary is mutable
 
 
-# To collect a particular value use it's corresponding value
+# To collect a particular value using it's corresponding value
+print("To collect a particular value using it's corresponding value")
 print(dictionary_duplicate_value['age'])
 print(dictionary_duplicate_value['first_name'], "\n")
 
 # To print key value pair
 for i in dictionary_duplicate_value:
-    print(i, ",", dictionary_duplicate_value[i])
+    print(i, ",", dictionary_duplicate_value[i], "\n")
+
+# How to update value
+print("How to update a value in dictionary")
+dictionary_duplicate_value['age'] = 30
+print(dictionary_duplicate_value, "\n")
+
+# add value in age
+dictionary_duplicate_value['age'] += 10
+print(dictionary_duplicate_value, '\n')
+
+# add new key-value pair
+print("Add new key-value pair")
+dictionary_duplicate_value['total'] = 75
+print(dictionary_duplicate_value, "\n")
+
+#
