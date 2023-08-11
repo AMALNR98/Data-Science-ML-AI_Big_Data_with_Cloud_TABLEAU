@@ -8,3 +8,9 @@
 #   3. Append : To update a file         ===> a
 
 # File reference
+
+# How to create a file reference
+# Syntax:
+#       variable_name =open('filepath','r')
+
+# Read operation
