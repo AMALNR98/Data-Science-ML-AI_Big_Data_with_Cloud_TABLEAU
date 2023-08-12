@@ -1,6 +1,6 @@
 customer = open('/home/amal/Downloads/customer1.txt', 'r')
 filtered_dictionary = {}
-prof_list =[]
+prof_list = []
 
 for i in customer:
     data = i.rstrip('\n').split(',')
