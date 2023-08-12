@@ -6,7 +6,6 @@
 
 movies = open('/home/amal/Downloads/movies_cleaned_pandas.csv', 'r')
 
-
 for i in movies:
     data = i.rstrip('\n').split(',')
     # print(data)
@@ -16,20 +15,6 @@ for i in movies:
     year = int(data[2])
     if year >= 2000:
         print(data[1:4])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # code for find movie count after 2000 released
 # filtered_dictionary = {}
