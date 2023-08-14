@@ -1,5 +1,6 @@
 class Student:
     collage_name = 'Sahrdaya'
+
     def keys(self, id, f_name, l_name, age):
         self.id = id
         self.first_name = f_name
