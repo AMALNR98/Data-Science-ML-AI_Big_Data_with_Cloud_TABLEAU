@@ -13,7 +13,7 @@ class Person:
 
 
 obj = Person()
-obj.set_value("Amal", "n", 25, "thrissur")
+obj.set_value("Amal", "n", 25, "Thrissur")
 obj.print_value()
-obj.set_value("kiran", "m", 40, "ernakulam")
+obj.set_value("kiran", "m", 40, "Ernakulam")
 obj.print_value()

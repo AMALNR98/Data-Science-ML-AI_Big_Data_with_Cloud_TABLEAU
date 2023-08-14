@@ -6,7 +6,7 @@
 #  3. method
 #  4. inheritance
 #  5. abstract
-#  6.polymorphism
+#  6. polymorphism
 
 # 1. class : base mode/blue-print
 # 2. object : real time entity
