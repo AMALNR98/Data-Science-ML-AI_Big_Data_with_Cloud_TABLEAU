@@ -10,15 +10,15 @@ class Student:
         print(self.id, self.first_name, self.l_name, self.age, self.colllage_name)
 
 
-obj = Student()
-obj.keys(100, "Amal", "n", 25, "sahrdaya")
-obj.print_value()
-obj.keys(101, "Akhil", "r", 25, "sahrdaya")
-obj.print_value()
-obj.keys(102, "john", "j", 24, "sahrdaya")
-obj.print_value()
-obj.keys(103, "robin", "babu", 25, "sahrdaya")
-obj.print_value()
+# obj = Student()
+# obj.keys(100, "Amal", "n", 25, "sahrdaya")
+# obj.print_value()
+# obj.keys(101, "Akhil", "r", 25, "sahrdaya")
+# obj.print_value()
+# obj.keys(102, "john", "j", 24, "sahrdaya")
+# obj.print_value()
+# obj.keys(103, "robin", "babu", 25, "sahrdaya")
+# obj.print_value()
 
 # 2 types of variables
 #   1. Instance variable or Dynamic variable    : in the above code snippet variables are defined inside "Method"
