@@ -5,6 +5,7 @@ for i in range(1, 16):
 
 print(lst)
 
-lst_1 = list(filter(lambda num: num % 2 != 0, lst))
-lst_1 = list(map(lambda num: num ** 2, lst_1))
+lst_1 = list(filter(lambda num: num % 2 == 1, lst))
 print(lst_1)
+square = list(map(lambda num: num ** 2, lst_1))
+print(square)
