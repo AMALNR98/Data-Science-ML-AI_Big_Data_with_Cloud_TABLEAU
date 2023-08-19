@@ -5,6 +5,7 @@
 #
 
 # Method 1
+# [printing range]
 
 # printing 1 to 30 element in list
 lst_1 = [i for i in range(1, 31)]
@@ -19,6 +20,5 @@ lst_3 = [(i, i ** 2) for i in range(1, 21)]
 print(lst_3)
 
 # 1 -30 range ===> cube
-lst_4 = [(i, i**3) for i in range(1,30)]
+lst_4 = [(i, i ** 3) for i in range(1, 30)]
 print(lst_4)
-
