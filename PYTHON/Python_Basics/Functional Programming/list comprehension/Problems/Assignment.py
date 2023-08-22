@@ -35,6 +35,6 @@ print("# 5. Find all of the word in a string that are less than 5 letters")
 lst_5 = [i for i in string_1.split(" ") if len(i) < 5]
 print(lst_5, "\n")
 
-#6
+# 6
 print("# 6. find number of vowels in string")
 print("Number of vowels is : ",len(lst_4))
