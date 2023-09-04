@@ -10,7 +10,7 @@
 # zeros function is used to create zero matrix
 import numpy as np
 
-zero_matrix = np.zeros(4 * 4)
+zero_matrix = np.zeros([3,4])
 print(zero_matrix)
 
 # To print datatype of a matrix we use 'dtype'
