@@ -18,3 +18,7 @@ a = np.array([4, 5, 6, 7])
 print(a)
 print(a.dtype)
 
+# to convert datatype
+b = np.array([4, 5, 6, 7], dtype=float)
+print(b)
+print(b.dtype)
