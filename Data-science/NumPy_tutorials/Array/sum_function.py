@@ -14,6 +14,7 @@ print(matrix_2)
 sum_of_2_d_matrix = np.sum(matrix_2)
 print(sum_of_2_d_matrix)
 
+
 # axis = 0 ---> columns
 # axis = 1 ---> row
 print("*"*50, "To find sum of each column of 2-D matrix", "*"*50)
