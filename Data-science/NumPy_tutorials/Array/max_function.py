@@ -13,9 +13,9 @@ max_of_matrix_2 = np.max(matrix_2)
 print(max_of_matrix_2)
 
 print("*" * 50, "2-D matrix max in columns", "*" * 50)
-max_of_matrix_2_column = np.max(matrix_2,axis=0)
+max_of_matrix_2_column = np.max(matrix_2, axis=0)
 print(max_of_matrix_2_column)
 
 print("*" * 50, "2-D matrix max in rows", "*" * 50)
-max_of_matrix_2_rows = np.max(matrix_2,axis=1)
+max_of_matrix_2_rows = np.max(matrix_2, axis=1)
 print(max_of_matrix_2_rows)
