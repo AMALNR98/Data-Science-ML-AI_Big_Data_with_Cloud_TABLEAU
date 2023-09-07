@@ -8,3 +8,5 @@ b = np.sort(a)
 print(b)
 
 # sort descending
+c = np.sort(a)[::-1]
+print(c)
