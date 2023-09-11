@@ -9,3 +9,10 @@ print(matrix_1)
 arg_sort_matrix = np.argsort(matrix_1)
 print(arg_sort_matrix)
 
+print("*" * 50, "1-D matrix arg-max", "*" * 50)
+arg_max_matrix = np.argmax(matrix_1)
+print(arg_max_matrix)
+
+print("*" * 50, "1-D matrix arg-min", "*" * 50)
+arg_min_matrix = np.argmin(matrix_1)
+print(arg_min_matrix)
