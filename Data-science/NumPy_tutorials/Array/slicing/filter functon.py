@@ -7,3 +7,4 @@ print(a)
 for i in a:
     if i > 43:
         print(i)
+
