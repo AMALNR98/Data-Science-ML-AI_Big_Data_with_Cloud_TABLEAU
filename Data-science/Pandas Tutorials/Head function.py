@@ -11,3 +11,7 @@ print(a.head())
 # tail function is used to print last 5 lines
 print("*"*100)
 print(a.tail())
+
+# To print first 3 lines
+print("*"*100)
+print(a.head(3))
