@@ -8,3 +8,4 @@ b = pd.Series([5, 3, 2, 1])
 
 c = a.div(b)
 print(c)
+
