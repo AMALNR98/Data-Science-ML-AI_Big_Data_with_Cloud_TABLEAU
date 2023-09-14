@@ -10,3 +10,6 @@ print(customer1)
 
 customer1_wanted_row = customer1.iloc[3:7]
 print(customer1_wanted_row)
+
+customer1_wanted_row_1 = customer1.iloc[3:, 1:4]  # collecting rows and columns
+print(customer1_wanted_row_1)
