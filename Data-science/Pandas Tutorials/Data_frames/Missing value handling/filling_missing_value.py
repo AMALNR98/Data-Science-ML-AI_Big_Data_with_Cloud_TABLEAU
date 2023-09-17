@@ -10,6 +10,9 @@ print(customer1)
 
 # fillna()
 
-print(("*"*100))
+print(("*" * 100))
 customer1_with_filling = customer1.fillna('India')
 print(customer1_with_filling)
+
+print("*" * 100)
+print(customer1_with_filling.isna().sum())
