@@ -9,5 +9,5 @@ print("*" * 150)
 # max
 # new_data_frame_name = old_data_frame_name.groupby('column_name') ['column_name'].max()
 
-max_temp = temperature.groupby('district') ['temp'].sum()
+max_temp = temperature.groupby('district') ['temp'].sum().sort_values(ascending=False)
 print(max_temp)
