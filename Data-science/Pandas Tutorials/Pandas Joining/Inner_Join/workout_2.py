@@ -10,9 +10,9 @@ result.columns = ['id', 'result']
 print(result)
 
 # result
-#,.,,,,,,,,
-#roll, res
+# .........
+# roll, res
 
 # pass name, roll, res
-inner_joined_data = pd.merge(student, result, on='id', how='inner') [['name', 'id', 'result']]
+inner_joined_data = pd.merge(student, result, on='id', how='inner')[['name', 'id', 'result']]
 print(inner_joined_data)
