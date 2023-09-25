@@ -16,5 +16,5 @@ missing_1['rating'].fillna(rating_mean, inplace=True)
 missing_1['duration'].fillna(duration_median, inplace=True)
 
 missing_1.to_csv('/home/amal/Documents/movies_may_cleaned.csv')
-# in default index also included to avoid that
-missing_1.to_csv('/home/amal/Documents/movies_may_cleaned.csv', index=False)
+# in default index also included to avoid that and avoind header
+missing_1.to_csv('/home/amal/Documents/movies_may_cleaned.csv', index=False, header=False)
