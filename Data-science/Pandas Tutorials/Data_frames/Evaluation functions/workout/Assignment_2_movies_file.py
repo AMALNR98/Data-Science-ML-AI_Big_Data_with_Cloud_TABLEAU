@@ -3,7 +3,7 @@
 2. Remove duplicates and find row count
 3. Sort data set by release year in des order
 4. Find rating mxm 5 movies name,year,rating
-5. Find rating minimum 3 movies name,year,rtaing
+5. Find rating minimum 3 movies name,year,rating
 6. Find Each year release movie count [count desc order]
 7. Each rating count [count desc order]
 8. 2008 and rating above 3 [collect]
@@ -46,7 +46,7 @@ question_4 = movies.sort_values(by='rating', ascending=False)[['movie', 'year', 
 print(question_4)
 print("*" * 150)
 
-print('5. Find rating minimum 3 movies name,year,rtaing')
+print('5. Find rating minimum 3 movies name,year,rating')
 question_5 = movies.sort_values(by='rating')[['movie', 'year', 'rating']].head(3)
 print(question_5)
 print("*" * 150)
@@ -65,7 +65,7 @@ print('8. 2008 and rating above 3 [collect]')
 question_8 = movies.loc[(movies['year'] >= 2008) & (movies['rating'] > 3)]
 print(question_8)
 print('    A. row count')
-question_8_b =question_8.shape[0]
+question_8_b = question_8.shape[0]
 print("*" * 150)
 
 print('9. Find duration mxm 1 movies name,year,rating,duration')
