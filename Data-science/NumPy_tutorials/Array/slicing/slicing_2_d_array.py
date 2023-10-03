@@ -42,6 +42,7 @@ print("*" * 100)
 print(a[0])
 #or
 print(a[:1,::])
+print("*" * 100)
 
 # 2)  print Zeroth column of data
 print(a[::,:1])
