@@ -17,7 +17,7 @@
 	Input   --------|         Logic		 |------------ Output
 			|			 |
 			--------------------------
-1) Supervised machine learning 
+**1) Supervised machine learning** 
 ----------------------------------------
 
 Supervised machine learning is a type of machine learning in which algorithms are trained on a labeled dataset to learn the relationship between input features and their corresponding target labels. The term "supervised" refers to the fact that the algorithm is provided with a supervisor, which is the labeled data, to guide its learning process. The goal of supervised learning is to build a model that can make accurate predictions or classifications on new, unseen data.
@@ -42,8 +42,8 @@ Here are the key components and concepts of supervised machine learning:
 5. **Model Evaluation**:
    - After training, the model's performance needs to be evaluated using a separate dataset known as the validation or test dataset. Common evaluation metrics for classification tasks include accuracy, precision, recall, F1-score, and the confusion matrix. For regression tasks, metrics like mean squared error (MSE) or root mean squared error (RMSE) are often used.
 
-6. **Overfitting and Underfitting**:
-   - Overfitting occurs when a model learns to perform exceptionally well on the training data but doesn't generalize well to new, unseen data. Underfitting, on the other hand, occurs when the model is too simplistic and fails to capture the underlying patterns in the data.
+6. **Over-fitting and Under-fitting**:
+   - Over-fitting occurs when a model learns to perform exceptionally well on the training data but doesn't generalize well to new, unseen data. Underfitting, on the other hand, occurs when the model is too simplistic and fails to capture the underlying patterns in the data.
 
 7. **Hyperparameter Tuning**:
    - Supervised learning models often have hyperparameters (parameters not learned during training) that can be adjusted to optimize model performance. Techniques like cross-validation are used to find the best combination of hyperparameters.
@@ -53,38 +53,47 @@ Here are the key components and concepts of supervised machine learning:
 
 Supervised machine learning is widely used in a variety of applications, including natural language processing (NLP), computer vision, speech recognition, recommendation systems, fraud detection, and many others. It forms the basis for many practical and valuable AI and data-driven solutions.
 
- -  In supervised machine learning we traine inputs and it's corrspondin outputs, then baseed one this inputs and ouputs create a model
- -  
+ -  In supervised machine learning we train inputs and its corresponding outputs, then based one of these inputs and outputs create a model
+   -  
 
-  		Input ===> Output ===> Model_create
-		Model_based =====> predict ======> output
+          Input ===> Output ===> Model_create
+          Model_based =====> predict ======> output
 
-		Two types of supervised machine learning machine learnig  :
+ Two types of supervised machine learning:
 			1) Classification
 			2) Regression
 
-		Classification	:
-		----------------
-				Classification is the task of predicting a categorical or discreate lable or class for each input. 
-						its like : True of false | yes or no | categorical
-			Algotithms:
-			----------
-				Knn, svm, Decition tree random forest, naviye bayes..
+Classification	:
+----------------
+ - Classification is the task of predicting a categorical or discrete label or class for each input. 
+ - It's like: True of false | yes or no | categorical
+    - Algorithms:
+      ----------
+		 - KNN
+         - SVM 
+         - Decision tree random forest 
+         - Naviye bayes.
 
-		Regression :
-		-------------
-				Rgression in used when the goal is to predict a continuous numeric value, such as  a price, temperature, or age.
+ Regression :
+ -------------
+  - Regression is used when the goal is to predict a continuous numeric value, such as  a price, temperature, or age.
+    
+    -
+                             input + output ===> model_creat
+                             Model_create ====> Numerical data
+                                     To predict a numerical data
+           
+    Algorithms:
+    -----------
+      - Simple linear regression 
+      - Multiple linear regression
+      - Logistic regression
+      - polynomial regression
 
-					input + output ===> model_creat
-					Model_create ====> Numerical data
-							To predict a numerical data
-			Algorithms:
-				Simple linear regression, multiple linear, logistic, polynomail regression
 
 
-
-2) Unsupervised machine learning
---------------------------------
+**2) Unsupervised machine learning**
+------------------------------------
 
 Unsupervised machine learning encompasses various techniques and methods that aim to discover patterns, structures, or relationships in unlabeled data. 
 Here are some common types of unsupervised machine learning:
