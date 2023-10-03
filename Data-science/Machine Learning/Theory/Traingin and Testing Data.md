@@ -12,7 +12,7 @@ In machine learning, it's essential to split your dataset into two or more subse
 
 3. **Validation Data (Optional)**:
    - In addition to training and testing sets, some machine learning workflows include a third subset called the validation data. The validation set is used to fine-tune hyperparameters and make decisions about the model's architecture.
-   - The validation data helps prevent overfitting, a common problem where a model performs well on the training data but poorly on unseen data. By evaluating the model's performance on the validation set, you can adjust hyperparameters to find the optimal configuration.
+   - The validation data helps prevent over-fitting, a common problem where a model performs well on the training data but poorly on unseen data. By evaluating the model's performance on the validation set, you can adjust hyperparameters to find the optimal configuration.
    - Cross-validation techniques, such as k-fold cross-validation, are also used to perform model evaluation and hyperparameter tuning efficiently.
 
 The typical split between training and testing data can vary depending on factors like the size of the dataset, the complexity of the problem, and the need for validation data. Common splits include 70-30, 80-20, or 90-10, where the training set receives the larger portion of the data. In some cases, when the dataset is extremely large, a smaller proportion may be allocated to testing data while maintaining a sufficiently large training set.
