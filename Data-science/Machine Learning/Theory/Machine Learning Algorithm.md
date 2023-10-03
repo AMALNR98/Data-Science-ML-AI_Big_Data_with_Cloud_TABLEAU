@@ -17,14 +17,14 @@ The process of applying machine learning algorithms typically involves several c
             - For project collect data from kaggle
 2. **Data Preprocessing / Data preparation**:
    - Data preprocessing is a critical step to clean and prepare the data for analysis. This may involve tasks such as:
-     - Handling missing values: Deciding whether to impute missing data or remove incomplete records.
-     - Feature engineering: Creating new features or transforming existing ones to enhance the model's performance.
-     - Data scaling: Scaling features to have similar ranges to prevent some features from dominating others.
-     - Encoding categorical variables: Converting categorical variables into numerical format for machine learning algorithms to work with.
-     - Data splitting: Dividing the dataset into training, validation, and test sets for model evaluation.
-     - Data cleaning
-     - Remove unwanted data
-     - Completely numerical data
+   - Handling missing values: Deciding whether to impute missing data or remove incomplete records.
+   - Feature engineering: Creating new features or transforming existing ones to enhance the model's performance.
+   - Data scaling: Scaling features to have similar ranges to prevent some features from dominating others.
+   - Encoding categorical variables: Converting categorical variables into numerical format for machine learning algorithms to work with.
+   - Data splitting: Dividing the dataset into training, validation, and test sets for model evaluation.
+   - Data cleaning
+   - Remove unwanted data
+   - Completely numerical data
 
 3. **Feature Selection**:
    - Feature selection involves choosing the most relevant and informative features for your machine learning model. Eliminating irrelevant or redundant features can improve model efficiency and performance.
