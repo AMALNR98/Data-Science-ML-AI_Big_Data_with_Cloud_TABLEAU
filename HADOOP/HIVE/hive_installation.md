@@ -40,7 +40,8 @@ export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:.
 
 -----------------------------------------------------------------------------------
 
-***- basic configuration***
+***- Basic configuration***
+------------------------
 
 - **step 1:** 
     - create 3 directories user, hive, warehouse
