@@ -6,14 +6,16 @@ id,fname,lname,age,prof,loc
 3. age>24 and age <50 ; fname, lname, age, prof
 4. prof == 'pilot' and age>25;fname, lname,age,prof
 5. age>40 and loc='india' id,fname, lname,age
+6. job = pilote fname, lname, age, job
+7. age > 40 and place = india fname, lname, age, job
 
-- ``select fname,lname,age from customer1;``
-- ``select fname,lname,age from customer1 where age>30;``
-- ``select id,age,lname,age,job,loc from customer1;``
-- ``select id,fname,lname,place from customer1 where age==24;``
-- ``select fname,lname,age,job from customer1 where age>24 AND age<50;``
-- ``select fname,lname,age,job from customer5 where job=='pilot';``
-- ``select fname,lname,age,job from customer1 where age>40 AND place=='india';``
+``select fname,lname,age from customer1;``
+2. ``select fname,lname,age from customer1 where age>30;``
+3. ``select id,age,lname,age,job,loc from customer1;``
+4. ``select id,fname,lname,place from customer1 where age==24;``
+5. ``select fname,lname,age,job from customer1 where age>24 AND age<50;``
+6. ``select fname,lname,age,job from customer5 where job=='pilot';``
+7. ``select fname,lname,age,job from customer1 where age>40 AND place=='india';``
 
 
 
@@ -25,9 +27,9 @@ id,fname,lname,age,prof,loc
 
 - ans:
 
-- ``select * from sample4 order by age desc limit 2;``
-- ``select fname,lname,age,location order by age desc limit 1;``
-- ``create view chennai_work_age_mxm as select fname,lname,age from sample4 where location=='Chennai' order by age desc limit 1;``
+1. ``select * from sample4 order by age desc limit 2;``
+2. ``select fname,lname,age,location order by age desc limit 1;``
+3. ``create view chennai_work_age_mxm as select fname,lname,age from sample4 where location=='Chennai' order by age desc limit 1;``
 
 
 
