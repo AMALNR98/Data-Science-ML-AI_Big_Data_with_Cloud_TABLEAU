@@ -6,14 +6,14 @@
 
 	``create database data_base_name;``
 
-3.how to delete database
+3. how to delete database
 
 	``drop database database_name;``
 
 4. select data base
 
 	``use database_name;``
-5.creation of table
+5. creation of table
 
 	``create table table_name(schema) row format delimited fields terminated by 'data-seperation' stored as textfile;``
 
