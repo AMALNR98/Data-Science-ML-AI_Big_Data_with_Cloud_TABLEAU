@@ -121,7 +121,7 @@ export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:.
 
 - **step 7:then goto home**
 
-`cd`` 
+``cd`` 
 
 - **step 8: copy mysql connector to hive's lib directory**
 
