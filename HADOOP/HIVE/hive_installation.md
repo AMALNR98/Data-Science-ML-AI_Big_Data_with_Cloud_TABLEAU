@@ -21,12 +21,13 @@ sudo chmod -R 777 hive
 ``sudo nano ~/.bashrc``
 
 - in the upcoming window, paste the following code
-``
+
+```
 export HIVE_HOME="/home/hduser/hive"
 export PATH="$HIVE_HOME/bin":$PATH
 export CLASSPATH=$CLASSPATH:/home/hduser/hadoop/lib/*:.
 export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:.
-``
+```
 - then save
 
 - **step 6: execute bashrc file**
