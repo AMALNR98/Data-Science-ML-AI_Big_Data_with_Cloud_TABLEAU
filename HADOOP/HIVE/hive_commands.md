@@ -23,7 +23,7 @@ eg:
 	``create table sample1(id1 int,id2 int,id3 int,id4 int,id5 int,id6 int,id7 int) row format delimited fields terminated by ',' stored as textfile;``
 
 
-	``create table txnfile(id bigint,date_ string,customer_id bigind,price float,category string,product string,place string,street string,payment_type string) row format delimited fields terminated by ',' stored as textfile;``
+  ``create table txnfile(id bigint,date_ string,customer_id bigind,price float,category string,product string,place string,street string,payment_type string) row format delimited fields terminated by ',' stored as textfile;``
 
 6. load data to table
 
@@ -97,7 +97,7 @@ internal tables vs external table??????
 
 2. DROP view table
 
-        ``drop view view_table_name;``
+      ``drop view view_table_name;``
 
 
 3. ORDER BY
@@ -123,9 +123,10 @@ internal tables vs external table??????
 5. DISTINCT()
 	for remove duplicate rows and collect unique rows
 	
-	select distinct * form table_name;
+	``select distinct * form table_name;``
 
-		eg:select distinct * from customer1;
+	- eg:
+		``select distinct * from customer1;``
 
 
 
@@ -142,7 +143,7 @@ EVALUATING FUNCTIONS
 
 		``select count(*) from table_name;``
 
-		eg: 
+		- eg: 
    			 ``select count(*) from customer1;``
 
 
@@ -150,7 +151,7 @@ EVALUATING FUNCTIONS
 		
 		``select column_name, count(*) from table_name group by column_name;``
 
-		eg: 
+		- eg: 
 		``select location, count(*) from sample4 group by location;``
 
 ```
@@ -163,9 +164,9 @@ EVALUATING FUNCTIONS
 
 	``select column_name, min(column_name) from table_name group by column_name;``
 
-	eg: 
+	- eg: 
 		``select age,min(age) from customer1 group by age;``
-			*or*
+			- *or*
 		``select job,min(age) from customer1 group by job;``
 
 3. MAX
@@ -184,17 +185,17 @@ EVALUATING FUNCTIONS
 Join operation
 --------------
 
-   joining 2 tables
+   - joining 2 tables
 
-   for join 2 table there should be at least 1 common field in both tables
+   - for join 2 table there should be at least 1 common field in both tables
 
   Type of joining:
   ---------------
 
   1) Inner joining
 			
-		An inner join returns only the matching rows from both tables based on the specified join condition. 
-		Rows from either table that do not have a match are excluded from the result.
+		- An inner join returns only the matching rows from both tables based on the specified join condition. 
+		- Rows from either table that do not have a match are excluded from the result.
 
   - eg
 		``custom :id,name,age,loc,salary ====> Table reference a b c d...``
@@ -205,7 +206,7 @@ Join operation
 
 	 so a query will
 
-				``select c.name,c.age,c.loc,c.salary,o.dat,o.amount from custom c join order1 o on(c.id=o.id);``
+	``select c.name,c.age,c.loc,c.salary,o.dat,o.amount from custom c join order1 o on(c.id=o.id);``
 
    - eg:
 				Steps :
@@ -219,18 +220,18 @@ Join operation
 
       #first table full data, second table dat,amount
 
-          ``select c.*, o.dat,o.amount from custom1 c join order1 o on(c.id=o.id);``
+        ``select c.*, o.dat,o.amount from custom1 c join order1 o on(c.id=o.id);``
       #name,age,loc,salary,dat,amount	[salary above 3000]
-          ``select c.name,c.age,c.loc,c.salary,o.dat,o.amount from custom1 c join order1 o on(c.id=o.id) where salary c.salary>3000;``
+        ``select c.name,c.age,c.loc,c.salary,o.dat,o.amount from custom1 c join order1 o on(c.id=o.id) where salary c.salary>3000;``
 
 
 					
   2) Left outer joining
         -  A left outer join returns all the rows from the left table and the matching rows from the right table. 
         - If there is no match, NULL values are included for columns from the right table.
-         -------------------------------------------------------------------------------
+         
 
-     eg : 
+   - eg : 
 		``select c.name,c.age,o.dat,o,amount from custom c left outer join order o on(c.id=o.id);``
 
 			
@@ -240,7 +241,7 @@ Join operation
 		- If there is no match, NULL values are included for columns from the left table.
 		-------------------------------------------------------------------------------
 
-		eg : 
+		- eg : 
 		``select c.name,c.age,o.dat,o,amount from custom c right outer join order o on(c.id=o.id);``
 
   4) Full outer joining
@@ -260,6 +261,6 @@ Dealing with header_tag file
 
 	syntax:
 
-		``create table table_name(schema) row format delimited fields terminated by ',' stored as textfile table_properties("skip.header.line.count"="1");``
+	``create table table_name(schema) row format delimited fields terminated by ',' stored as textfile table_properties("skip.header.line.count"="1");``
 
 
