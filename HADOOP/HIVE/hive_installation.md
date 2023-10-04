@@ -1,73 +1,73 @@
-step 1:download 
+- step 1:download 
 	https://archive.apache.org/dist/hive/hive-2.3.4/
 
-step 2: extract and copy to hduser
+- step 2: extract and copy to hduser
 
-	 sudo cp -R /home/amal/Downloads/apache-hive-2.3.4-bin ~/hive
+       	sudo cp -R /home/amal/Downloads/apache-hive-2.3.4-bin ~/hive
 
-step 3: give directory permission
+- step 3: give directory permission
 
-	sudo chmod -R 777 hive
-step 4: give ownership permission
+        sudo chmod -R 777 hive
+- step 4: give ownership permission
 
-	sudo chown -R hduser:hadoop hive
+      sudo chown -R hduser:hadoop hive
 
-step 5:
-	open bashrc file and set path
+- step 5:
+    - open bashrc file and set path
 
-	sudo nano ~/.bashrc
+      		sudo nano ~/.bashrc
 
-	in upcoming window paste following code
+    - in the upcoming window, paste the following code
 
-		export HIVE_HOME="/home/hduser/hive"
-		export PATH="$HIVE_HOME/bin":$PATH
-		export CLASSPATH=$CLASSPATH:/home/hduser/hadoop/lib/*:.
-		export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:.
+          export HIVE_HOME="/home/hduser/hive"
+          export PATH="$HIVE_HOME/bin":$PATH
+          export CLASSPATH=$CLASSPATH:/home/hduser/hadoop/lib/*:.
+          export CLASSPATH=$CLASSPATH:/home/hduser/hive/lib/*:.
 
-	then save
+    then save
 
-step 6:
+- step 6:
 
 	execute bashrc file
 
 	source ~/.bashrc
 
-step 7: then type hive 
+- step 7: then type hive 
 	then hive shell will open
 
 basic installation competed
 
 -----------------------------------------------------------------------------------
 
-basic configuration
+- basic configuration
 
-step 1: 
-	create 3 directories user, hive, warehouse
-	these are used for store databases in hive
+- step 1: 
+    - create 3 directories user, hive, warehouse
+    - these are used to store databases in hive
 
-	hdfs dfs -mkdir -p /user/hive/warehouse
+          	hdfs dfs -mkdir -p /user/hive/warehouse
 
-step 2: give perimission
+- step 2: give permission
 
-	hdfs dfs -chmod -R g+w /user/hive/warehouse
-step 3: change location to hive
+          hdfs dfs -chmod -R g+w /user/hive/warehouse
+- step 3: change location to hive
 
-	cd hive
-step 4:change location to conf
+                cd hive
+- step 4:change location to conf
 
-	cd conf
+      	cd conf
 
-step 5: create file
+- step 5: create file
 
-	sudo touch hive-site.xml
+      	sudo touch hive-site.xml
 
-step 6:edit created file
+ - step 6:edit created file
 
-	sudo nano hive-site.xml
+      	sudo nano hive-site.xml
 
 
-	then paste following content
-
+then paste the following content
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>  
@@ -112,20 +112,19 @@ step 6:edit created file
     <value>true</value>
     </property>
 </configuration>
+```
 
+- then save the file
 
-	then save the file
+- step 7:then goto home
 
-step 7:then goto home
+      	cd 
 
-	cd 
+- step 8: copy mysql connector to hive's lib directory
 
-step 8:
-	copy mysql connector to hive's lib direcory
+        sudo cp /home/amal/Downloads/mysql-connector-java-5.1.47-bin.jar /home/hduser/hive/lib
 
-	sudo cp /home/amal/Downloads/mysql-connector-java-5.1.47-bin.jar /home/hduser/hive/lib
-
-step 9:
+- step 9:
 
 	schematool -initSchema -dbType mysql
 
