@@ -8,14 +8,14 @@ id,fname,lname,age,prof,loc
 5. age>40 and loc='india' id,fname, lname,age
 6. job = pilote fname, lname, age, job
 7. age > 40 and place = india fname, lname, age, job
-
+- ans). 
 	- ``select fname,lname,age from customer1;``
-2. - ``select fname,lname,age from customer1 where age>30;``
-3. - ``select id,age,lname,age,job,loc from customer1;``
-4. - ``select id,fname,lname,place from customer1 where age==24;``
-5. - ``select fname,lname,age,job from customer1 where age>24 AND age<50;``
-6. - ``select fname,lname,age,job from customer5 where job=='pilot';``
-7. - ``select fname,lname,age,job from customer1 where age>40 AND place=='india';``
+    - ``select fname,lname,age from customer1 where age>30;``
+    - ``select id,age,lname,age,job,loc from customer1;``
+    - ``select id,fname,lname,place from customer1 where age==24;``
+    - ``select fname,lname,age,job from customer1 where age>24 AND age<50;``
+    - ``select fname,lname,age,job from customer5 where job=='pilot';``
+    - ``select fname,lname,age,job from customer1 where age>40 AND place=='india';``
 
 
 
