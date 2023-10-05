@@ -4,7 +4,8 @@
 
     - in KNN we should give odd number to K.
 - Example 1
-!(KNN algorithm example.png)
+- 
+- ![](./png_files/example 1.png)
   - in this example consider fire point, we give k = 5 then for first point it takes 5 nearest points
     - then we get two circles and three squares, so the shape is predicted as square
   - in the second point we take k = 7 
@@ -12,6 +13,7 @@
     - so the point is predicted as circle
 
 - Example 2
+- ![](./png_files/example 2 question.png)
 
 
 
