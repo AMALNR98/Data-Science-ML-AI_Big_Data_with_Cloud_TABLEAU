@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: Supervised machine learning: KNN implementation : iris flower data">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AMALNR98"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="91e42cf0-64a1-43d3-9c37-cb60e6798afe" />
+        <option name="url" value="https://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@github.com/AMALNR98/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2UNSa6pi4EMmkwYWkKnyg3cK3sQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm/K-Nearest Neighbor Algorithm/png_files" />
+      <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm" />
+      <recent name="$PROJECT_DIR$/Machine Learning/Theory" />
+      <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning" />
+      <recent name="$PROJECT_DIR$/Pandas Tutorials/Data_frames/Workout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="" />
+      <created>1692778605545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692778605545</updated>
+    </task>
+    <task id="LOCAL-00141" summary="pandas : full outer joining">
+      <option name="closed" value="true" />
+      <created>1695284546991</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1695284546991</updated>
+    </task>
+    <task id="LOCAL-00142" summary="pandas : right outer joining">
+      <option name="closed" value="true" />
+      <created>1695284560538</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1695284560538</updated>
+    </task>
+    <task id="LOCAL-00143" summary="pandas : full outer joining">
+      <option name="closed" value="true" />
+      <created>1695284569443</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1695284569443</updated>
+    </task>
+    <task id="LOCAL-00144" summary="pandas : drop missing value included row">
+      <option name="closed" value="true" />
+      <created>1695366918025</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1695366918025</updated>
+    </task>
+    <task id="LOCAL-00145" summary="pandas : correct_index_after_drop : ignore_index and reset_index">
+      <option name="closed" value="true" />
+      <created>1695367278492</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1695367278492</updated>
+    </task>
+    <task id="LOCAL-00146" summary="pandas : drop_missing_value_in_same_data_frame">
+      <option name="closed" value="true" />
+      <created>1695367660502</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1695367660502</updated>
+    </task>
+    <task id="LOCAL-00147" summary="pandas : filling_missing_value_with_integer">
+      <option name="closed" value="true" />
+      <created>1695367692833</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1695367692833</updated>
+    </task>
+    <task id="LOCAL-00148" summary="pandas : filling_missing_value_in_specific_column">
+      <option name="closed" value="true" />
+      <created>1695368183554</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1695368183554</updated>
+    </task>
+    <task id="LOCAL-00149" summary="pandas : filling_missing_value_with_mean.py">
+      <option name="closed" value="true" />
+      <created>1695368569951</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1695368569951</updated>
+    </task>
+    <task id="LOCAL-00150" summary="pandas : filling_missing_value_with_median.py">
+      <option name="closed" value="true" />
+      <created>1695368682681</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1695368682681</updated>
+    </task>
+    <task id="LOCAL-00151" summary="pandas : filling_missing_value_with_mode">
+      <option name="closed" value="true" />
+      <created>1695368877809</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1695368877810</updated>
+    </task>
+    <task id="LOCAL-00152" summary="pandas : workout_2">
+      <option name="closed" value="true" />
+      <created>1695370449863</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1695370449863</updated>
+    </task>
+    <task id="LOCAL-00153" summary="pandas : drop_missing_value_in_specified_column_using_subset">
+      <option name="closed" value="true" />
+      <created>1695370502462</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1695370502462</updated>
+    </task>
+    <task id="LOCAL-00154" summary="pandas : How_to_handle_wrong_format_data">
+      <option name="closed" value="true" />
+      <created>1695625570719</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1695625570720</updated>
+    </task>
+    <task id="LOCAL-00155" summary="pandas : replacing_unrealistic_data_to_normal_data_filled_by_mean">
+      <option name="closed" value="true" />
+      <created>1695627060531</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1695627060531</updated>
+    </task>
+    <task id="LOCAL-00156" summary="pandas : workout_3">
+      <option name="closed" value="true" />
+      <created>1695627620146</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1695627620147</updated>
+    </task>
+    <task id="LOCAL-00157" summary="pandas : save_cleaned_file_externally">
+      <option name="closed" value="true" />
+      <created>1695628019220</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1695628019221</updated>
+    </task>
+    <task id="LOCAL-00158" summary="pandas : save_cleaned_file_externally">
+      <option name="closed" value="true" />
+      <created>1695628087496</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1695628087496</updated>
+    </task>
+    <task id="LOCAL-00159" summary="pandas : save_cleaned_file_externally">
+      <option name="closed" value="true" />
+      <created>1695628415686</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1695628415686</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Machine Learning">
+      <option name="closed" value="true" />
+      <created>1695629343329</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1695629343330</updated>
+    </task>
+    <task id="LOCAL-00161" summary="Assignment_2_movies_file">
+      <option name="closed" value="true" />
+      <created>1695801984363</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1695801984363</updated>
+    </task>
+    <task id="LOCAL-00162" summary="sentimental analysis">
+      <option name="closed" value="true" />
+      <created>1695898061907</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1695898061908</updated>
+    </task>
+    <task id="LOCAL-00163" summary="sentimental analysis">
+      <option name="closed" value="true" />
+      <created>1695899053597</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1695899053597</updated>
+    </task>
+    <task id="LOCAL-00164" summary="machine learning">
+      <option name="closed" value="true" />
+      <created>1696318830187</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1696318830188</updated>
+    </task>
+    <task id="LOCAL-00165" summary="machine learning">
+      <option name="closed" value="true" />
+      <created>1696320831880</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1696320831880</updated>
+    </task>
+    <task id="LOCAL-00166" summary="machine learning: sentiment analysis">
+      <option name="closed" value="true" />
+      <created>1696321331821</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1696321331821</updated>
+    </task>
+    <task id="LOCAL-00167" summary="machine learning: sentiment analysis basic program">
+      <option name="closed" value="true" />
+      <created>1696321356295</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1696321356295</updated>
+    </task>
+    <task id="LOCAL-00168" summary="machine learning: supervised machine learning">
+      <option name="closed" value="true" />
+      <created>1696321380961</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1696321380961</updated>
+    </task>
+    <task id="LOCAL-00169" summary="machine learning: algorithm">
+      <option name="closed" value="true" />
+      <created>1696321395067</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1696321395067</updated>
+    </task>
+    <task id="LOCAL-00170" summary="machine learning : how to collect a public data form social media">
+      <option name="closed" value="true" />
+      <created>1696321431780</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1696321431780</updated>
+    </task>
+    <task id="LOCAL-00171" summary="machine learning : Traingin and Testing Data">
+      <option name="closed" value="true" />
+      <created>1696321449927</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1696321449927</updated>
+    </task>
+    <task id="LOCAL-00172" summary="machine learning : Supervised machine learning : KNN">
+      <option name="closed" value="true" />
+      <created>1696322088687</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1696322088687</updated>
+    </task>
+    <task id="LOCAL-00173" summary="machine learning : Supervised machine learning : KNN : K-Nearest Neighbor Algorithm">
+      <option name="closed" value="true" />
+      <created>1696333556289</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333556289</updated>
+    </task>
+    <task id="LOCAL-00174" summary="machine learning : Supervised machine learning : KNN : Why do we need KNN">
+      <option name="closed" value="true" />
+      <created>1696333579434</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333579435</updated>
+    </task>
+    <task id="LOCAL-00175" summary="machine learning : Supervised machine learning : KNN : How do we choose the factor &quot;k&quot;?">
+      <option name="closed" value="true" />
+      <created>1696333635628</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333635629</updated>
+    </task>
+    <task id="LOCAL-00176" summary="machine learning : Supervised machine learning : KNN : How do we choose the factor &quot;k&quot;?">
+      <option name="closed" value="true" />
+      <created>1696333683328</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333683328</updated>
+    </task>
+    <task id="LOCAL-00177" summary="machine learning : Supervised machine learning : KNN : when do we use KNN?">
+      <option name="closed" value="true" />
+      <created>1696333762837</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333762837</updated>
+    </task>
+    <task id="LOCAL-00178" summary="machine learning : Supervised machine learning : KNN : How does the KNN algorithm works?">
+      <option name="closed" value="true" />
+      <created>1696333832947</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333832947</updated>
+    </task>
+    <task id="LOCAL-00179" summary="machine learning : Supervised machine learning : KNN">
+      <option name="closed" value="true" />
+      <created>1696333972365</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1696333972366</updated>
+    </task>
+    <task id="LOCAL-00180" summary="machine learning : Supervised machine learning">
+      <option name="closed" value="true" />
+      <created>1696335897771</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1696335897771</updated>
+    </task>
+    <task id="LOCAL-00181" summary="machine learning : Supervised machine learning">
+      <option name="closed" value="true" />
+      <created>1696336197898</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1696336197898</updated>
+    </task>
+    <task id="LOCAL-00182" summary="machine learning : Supervised machine learning">
+      <option name="closed" value="true" />
+      <created>1696336581291</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1696336581291</updated>
+    </task>
+    <task id="LOCAL-00183" summary="machine learning: Supervised machine learning: KNN">
+      <option name="closed" value="true" />
+      <created>1696406485526</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1696406485527</updated>
+    </task>
+    <task id="LOCAL-00184" summary="machine learning: Supervised machine learning: KNN implementation">
+      <option name="closed" value="true" />
+      <created>1696491222098</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1696491222099</updated>
+    </task>
+    <task id="LOCAL-00185" summary="machine learning: Supervised machine learning: KNN implementation">
+      <option name="closed" value="true" />
+      <created>1696567852034</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1696567852035</updated>
+    </task>
+    <task id="LOCAL-00186" summary="machine learning: Supervised machine learning: KNN implementation : diabetic data">
+      <option name="closed" value="true" />
+      <created>1696655798806</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1696655798807</updated>
+    </task>
+    <task id="LOCAL-00187" summary="machine learning: Supervised machine learning: KNN implementation : iris flower data">
+      <option name="closed" value="true" />
+      <created>1696655813482</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1696655813482</updated>
+    </task>
+    <task id="LOCAL-00188" summary="machine learning: Supervised machine learning: KNN implementation : iris flower data">
+      <option name="closed" value="true" />
+      <created>1696656676431</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1696656676431</updated>
+    </task>
+    <task id="LOCAL-00189" summary="machine learning: Supervised machine learning: KNN implementation : iris flower data">
+      <option name="closed" value="true" />
+      <created>1696656692206</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1696656692206</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pandas : How_to_handle_wrong_format_data" />
+    <MESSAGE value="pandas : replacing_unrealistic_data_to_normal_data_filled_by_mean" />
+    <MESSAGE value="pandas : workout_3" />
+    <MESSAGE value="pandas : save_cleaned_file_externally" />
+    <MESSAGE value="Machine Learning" />
+    <MESSAGE value="Assignment_2_movies_file" />
+    <MESSAGE value="sentimental analysis" />
+    <MESSAGE value="machine learning" />
+    <MESSAGE value="machine learning: sentiment analysis" />
+    <MESSAGE value="machine learning: sentiment analysis basic program" />
+    <MESSAGE value="machine learning: supervised machine learning" />
+    <MESSAGE value="machine learning: algorithm" />
+    <MESSAGE value="machine learning : how to collect a public data form social media" />
+    <MESSAGE value="machine learning : Traingin and Testing Data" />
+    <MESSAGE value="machine learning : Supervised machine learning : KNN : K-Nearest Neighbor Algorithm" />
+    <MESSAGE value="machine learning : Supervised machine learning : KNN : Why do we need KNN" />
+    <MESSAGE value="machine learning : Supervised machine learning : KNN : How do we choose the factor &quot;k&quot;?" />
+    <MESSAGE value="machine learning : Supervised machine learning : KNN : when do we use KNN?" />
+    <MESSAGE value="machine learning : Supervised machine learning : KNN : How does the KNN algorithm works?" />
+    <MESSAGE value="machine learning : Supervised machine learning : KNN" />
+    <MESSAGE value="machine learning : Supervised machine learning" />
+    <MESSAGE value="machine learning: Supervised machine learning: KNN" />
+    <MESSAGE value="machine learning: Supervised machine learning: KNN implementation" />
+    <MESSAGE value="machine learning: Supervised machine learning: KNN implementation : diabetic data" />
+    <MESSAGE value="machine learning: Supervised machine learning: KNN implementation : iris flower data" />
+    <option name="LAST_COMMIT_MESSAGE" value="machine learning: Supervised machine learning: KNN implementation : iris flower data" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Pandas Tutorials/Data_frames/nested list to data frame.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

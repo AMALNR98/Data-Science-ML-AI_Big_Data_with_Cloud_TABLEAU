@@ -53,4 +53,42 @@ This example demonstrates how conditional probability allows you to update proba
 
 **Bayes Theorem Example**
 - ![](./png_files/Play%20Tennis%20example%20for%20Bayes%20therorem.jpeg)
-- x = outlook = sunny, Temperature = cool, Humidity:High, wind = Strong
+     - x = outlook = sunny, Temperature = cool, Humidity:High, wind = Strong
+- Ans) 
+  - P(yes) = 9 / 14
+  - P(No) = 5/14
+
+    - | Outlook     | yes | no  |
+      |-------------|-----|-----|
+      | Sunny       | 2/9 | 3/5 |
+      | Overcast    | 4/9 | 0   |
+      | Rain        | 3/9 | 2/5 |
+    
+    - | Temperature | yes | no  |
+      |-------------|-----|-----|
+      | Hot         | 2/9 | 2/5 |
+      | mild        | 4/9 | 2/5 |
+      | cool        | 3/9 | 1/5 |
+    
+    - | Humidity | yes | no  |
+      |----------|-----|-----|
+      | high     | 3/9 | 4/5 |
+      | normal   | 6/9 | 1/5 |
+    
+    - | Wind | yes | no  |
+      |------|-----|-----|
+      | weak | 6/9 | 2/5 |
+      | mild | 3/9 | 3/5 |
+      
+ - x = outlook = sunny, Temperature = cool, Humidity:High, wind = Strong
+
+  - P(yes/x) = P(x/yes)*P(yes)/P(x)
+      - = P(outlook = sunny)/yes * P(Temperature = cool)/yes*P(Humidity = high)/yes*p(wind = strong/yes)*p(yes)
+      - 2/9 * 3/9 * 3/9 * 3/9 * 9/14 = 0.005
+
+    - P(no/x) = P(x)/no*P(no)/P(x)
+      - 3/5*1/5*4/5*3/5*5/14 = 0.0205 
+
+    - P(yes) = 0.0005
+    - P(no) = 0.0205
+  - So here P(no) is higher value, so in this condition we can't play
