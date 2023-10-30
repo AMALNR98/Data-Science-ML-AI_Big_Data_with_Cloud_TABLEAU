@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: Supervised machine learning: KNN implementation : iris flower data">
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: ipynb files added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +23,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AMALNR98"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AMALNR98&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -44,26 +44,30 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2UNSa6pi4EMmkwYWkKnyg3cK3sQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/Data-science",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Performance measuments" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm/K-Nearest Neighbor Algorithm/png_files" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm" />
       <recent name="$PROJECT_DIR$/Machine Learning/Theory" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning" />
-      <recent name="$PROJECT_DIR$/Pandas Tutorials/Data_frames/Workout" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,14 +78,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692778605545</updated>
-    </task>
-    <task id="LOCAL-00141" summary="pandas : full outer joining">
-      <option name="closed" value="true" />
-      <created>1695284546991</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1695284546991</updated>
     </task>
     <task id="LOCAL-00142" summary="pandas : right outer joining">
       <option name="closed" value="true" />
@@ -467,11 +463,19 @@
       <option name="project" value="LOCAL" />
       <updated>1696656692206</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="machine learning: ipynb files added">
+      <option name="closed" value="true" />
+      <created>1698480571124</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1698480571125</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pandas : How_to_handle_wrong_format_data" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="pandas : replacing_unrealistic_data_to_normal_data_filled_by_mean" />
     <MESSAGE value="pandas : workout_3" />
     <MESSAGE value="pandas : save_cleaned_file_externally" />
@@ -496,7 +500,8 @@
     <MESSAGE value="machine learning: Supervised machine learning: KNN implementation" />
     <MESSAGE value="machine learning: Supervised machine learning: KNN implementation : diabetic data" />
     <MESSAGE value="machine learning: Supervised machine learning: KNN implementation : iris flower data" />
-    <option name="LAST_COMMIT_MESSAGE" value="machine learning: Supervised machine learning: KNN implementation : iris flower data" />
+    <MESSAGE value="machine learning: ipynb files added" />
+    <option name="LAST_COMMIT_MESSAGE" value="machine learning: ipynb files added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

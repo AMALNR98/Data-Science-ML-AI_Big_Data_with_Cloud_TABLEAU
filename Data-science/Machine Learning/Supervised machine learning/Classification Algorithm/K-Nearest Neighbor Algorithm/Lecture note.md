@@ -5,7 +5,7 @@
     - in KNN we should give odd number to K.
 - **Example 1**
 - 
-- ![](./png_files/example 1.png)
+- ![](../../../Miselaneious/Performance%20measuments/png_files/example 1.png)
   - in this example consider fire point, we give k = 5 then for first point it takes 5 nearest points
     - then we get two circles and three squares, so the shape is predicted as square
   - in the second point we take k = 7 
@@ -13,7 +13,7 @@
     - so the point is predicted as circle
 
 - **Example 2**
-- ![](./png_files/example 2 question.png)
+- ![](../../../Miselaneious/Performance%20measuments/png_files/example 2 question.png)
    - in this table if x1 = 3 and x2 = 7 what will be the target??
 
 
@@ -33,7 +33,7 @@ from equation
   - (3 - 3)^2 + (7 - 4)^2 = root(9) = 3
 - p4(1, 4) ------- p5(3, 7)
   - (3-1)^2 + (7-4)^2 = root(13) = 3.6
-- ![](./png_files/final result.png)
+- ![](../../../Miselaneious/Performance%20measuments/png_files/final result.png)
 
 - here we take k = 3 
 - so take 3 nearest points of p5
