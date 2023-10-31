@@ -73,21 +73,21 @@ These performance measurements are just a selection of the many metrics availabl
 - When we use another Performance measurement
 - Other performance measurements used when thd give dataset is imbalanced.
 - ***To find imbalanced dataset*** - group and count or value_count
+---
+- ***Recall***
 
-- Recall
+   - gives importance for false negative, optimise false negative
+   - so recall should be increased and reduce false negative
+   - ``Recall = TP/(TP+FN)``
+   - Recall should be high
 ---
-  - gives importance for false negative, optimise false negative
-  - so recall should be increased and reduce false negative
-  - ``Recall = TP/(TP+FN)``
-  - Recall should be high
-- Precision
----
-  - Give important for false positive
-  - ``Precision = TP/(TP+FP)``
-  - Precision should be high
+- ***Precision***
 
-- F1 Score
+   - Give important for false positive
+     - ``Precision = TP/(TP+FP)``
+     - Precision should be high
 ---
+- ***F1 Score***
+
   - combined or balanced performance measurements of recall and precision
   - ``F1_score = 2*(recall*precision/ (recall + precision))``
-  - 
