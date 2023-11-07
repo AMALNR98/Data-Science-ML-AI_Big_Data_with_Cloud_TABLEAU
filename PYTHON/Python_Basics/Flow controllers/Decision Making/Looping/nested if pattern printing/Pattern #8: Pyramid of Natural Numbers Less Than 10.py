@@ -13,3 +13,7 @@ for i in range(rows):
         current_number += 1
     print(' ')
     stop += 2
+
+# 1
+# 2 3 4
+# 5 6 7 8 9 
