@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="functional programming : List comprehension : method 3 : assignment" />
+    <list default="true" id="65fdc539-eccf-4bd6-bc87-73a8e921f516" name="Changes" comment="functional programming : List comprehension : method 3 : assignment">
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #1: Simple Number Triangle Pattern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #2: Inverted Pyramid of Numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #3: Half Pyramid Pattern of Numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #4: Inverted Pyramid of Descending Numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #5: Inverted Pyramid of the Same Digit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #6: Reverse Pyramid of Numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python_Basics/Flow controllers/Decision Making/Looping/nested if pattern printing/Pattern #7: Inverted Half Pyramid Number Pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HADOOP/Hadoop/3.Hadoop_installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/../HADOOP/Hadoop/3.Hadoop_installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,14 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/Data-science&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/PYTHON"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Python_Basics/OOPs/Inheritance" />
