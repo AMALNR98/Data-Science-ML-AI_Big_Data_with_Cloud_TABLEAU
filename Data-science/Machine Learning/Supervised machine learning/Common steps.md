@@ -6,20 +6,25 @@ import pandas as pd
 iris = pd.read_csv('/content/Iris.csv')
 iris
 ```
-# 2. ***Separate x and y***
+# 2. ***Check the dataset balanced or imbalanced***
+```python
+diabetes['Outcome'].value_counts()
+```
+  - if the difference is than 50%, the dataset is imbalanced 
+# 3. ***Separate x and y***
 ---
 ```python
 x = iris_drop.iloc[:,:-1].values
 y = iris_drop.iloc[:,-1].values
 ```
-# 3. ***Giving data for training and testing***
+# 4. ***Giving data for training and testing***
 ---
 ```pyhton
 from pandas.core.common import random_state
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.30, random_state = 42)
 ```
-# 4. ***Normalization / Preprocessing***
+# 5. ***Normalization / Preprocessing***
 ---
 ```Python
 from sklearn.preprocessing import StandardScaler
@@ -28,7 +33,7 @@ scaler.fit(x_train)
 x_train = scaler.transform(x_train)
 x_test = scaler.transform(x_test)
 ```
-# 5. ***Model creation***
+# 6. ***Model creation***
 ---
  -***KNN***
   ---
@@ -115,7 +120,7 @@ x_test = scaler.transform(x_test)
     y_poly = model1.predict(x_poly)
     y_poly
 ```
-# 6.***Classification Report***
+# 7.***Classification Report***
 ---
  -***Confusion matrix***
  ```python
@@ -123,12 +128,7 @@ x_test = scaler.transform(x_test)
     matrix_con = confusion_matrix(y_test, y_pred)
     matrix_con
 ```
- -***Accuracy Score***
- ```python
-    from sklearn.metrics import confusion_matrix, accuracy_score
-    score = accuracy_score(y_test, y_pred)
-    score
-```
+
  -***Classification Report***
  ```python
     from sklearn.metrics import classification_report
@@ -136,3 +136,42 @@ x_test = scaler.transform(x_test)
     report = classification_report(y_test, y_pred) # actual value, predited value
     print(report) # here we should use print function
 ```
+# 8. ***Performance measurements for classification model***
+---
+ -***Accuracy Score***
+ ```python
+    from sklearn.metrics import confusion_matrix, accuracy_score
+    score = accuracy_score(y_test, y_pred)
+    score
+```
+     1. Accuracy score
+     2. Recall
+     3. Precision
+     4. F1 Score
+# 8. ***Performance Measurements for Regression Model***
+
+      1. MAE(Mean Absolute Error)
+      2. MAPE(Mean Absolute Percentage Error)
+      3. MSE(Mean Squared Error)
+      4. RMSE (Root Mean Squared Error)
+      5. R2_score : 
+```python
+    # Mean Absoulte Percentage error
+    from sklearn.metrics import mean_absolute_percentage_error
+    print("Error percentage is ", mean_absolute_percentage_error(y_test, y_pred))
+    
+    # R2_Score
+    from sklearn.metrics import r2_score
+    print("R2 score is", r2_score(y_test, y_pred))
+```
+# 9. ***Plot confusion matrix***
+```python
+    from sklearn.metrics import ConfusionMatrixDisplay
+    lables =  [1, 1]
+    # The order must be in y_test
+    cmd = ConfusionMatrixDisplay(matrix_con, display_labels = lables)
+    cmd.plot()
+```
+ 
+
+
