@@ -1,15 +1,15 @@
-1. *** Drop ***
+1.***Drop***
 ---
 ```python
 train = train_data.drop(['Unnamed: 0'], axis = 1)
 train
 ```
-2. ***Count***
+2.***Count***
 ---
 ```python
 train_data['Location'].value_counts()
 ```
-3. ***Encoding Techniques***
+3.***Encoding Techniques***
 ---
 - ***Label Recording***
 ---
@@ -31,23 +31,23 @@ train_data_1
 combined_data = pd.concat([train_data, train_data_1], axis=1)
 combined_data
 ```
-4. ***Remove String values***
+4.***Remove String values***
 ```python
 combined_data['Mileage'] = combined_data['Mileage'].str.replace('km/kg', '') # replace km/kg with 'non space'
 combined_data['Mileage'] = combined_data['Mileage'].str.replace('kmpl', '')
 combined_data
 ```
-5. ***In this data set there is 'null' value as string (not null value). it's not missing value. So replace that null as zero***
+5.***In this data set there is 'null' value as string (not null value). it's not missing value. So replace that null as zero***
 ---
 ```python
 combined_data['Mileage'] = combined_data['Mileage'].str.replace('null','0')
 ```
-6. ***Datatype conversion***
+6.***Datatype conversion***
 ---
 ```python
 combined_data['Mileage'] = combined_data['Mileage'].astype(float)
 ```
-7. ***Replacing all zero values to missing value(NaN) using numpy***
+7.***Replacing all zero values to missing value(NaN) using numpy***
 ---
 ```python
 combined_data.loc[combined_data.Mileage == 0, 'Mileage'] = np.NaN
