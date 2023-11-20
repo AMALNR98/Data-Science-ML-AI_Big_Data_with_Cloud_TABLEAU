@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: ipynb files added">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Feature Selection.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Importand terms/Categorical data.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection/Chi Square test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection/Feature Selection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection/Lecture Note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/GridSearchCv/GridSearchCv.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/GridSearchCv/LectureNote.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Matplotlib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Seaborn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/K-Mean Clustering.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/Lecture Note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/Lecture Note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/Unsupervised Machine Learning.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Data preprocessing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Data preprocessing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Lecture note.md" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Lecture note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Problem.md" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Problem.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +71,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/Data-science&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/amal/Documents/Stock-Market-Analysis",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection" />
       <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Performance measuments" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm/K-Nearest Neighbor Algorithm/png_files" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm" />
       <recent name="$PROJECT_DIR$/Machine Learning/Theory" />
-      <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

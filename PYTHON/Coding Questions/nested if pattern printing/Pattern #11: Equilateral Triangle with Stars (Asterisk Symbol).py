@@ -22,3 +22,4 @@ for i in range(0,size):
         #Printing full triangle pyramid using stars
         print("*", end=' ')
     print(' ')
+
