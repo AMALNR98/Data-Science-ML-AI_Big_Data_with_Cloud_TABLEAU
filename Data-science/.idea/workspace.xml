@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: ipynb files added">
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Feature Selection.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Importand terms/Categorical data.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection/Chi Square test.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection/Feature Selection.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection/Lecture Note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/GridSearchCv/GridSearchCv.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/GridSearchCv/LectureNote.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Matplotlib.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Seaborn.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/K-Mean Clustering.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/Lecture Note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/K-Mean Clustering/png_files/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/Lecture Note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/Unsupervised Machine Learning/Unsupervised Machine Learning.md" afterDir="false" />
+    <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: files added">
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Natural Language Processing/NLP Applications.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Natural Language Processing/Pre-processing steps.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Natural Language Processing/TF-IDF example.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Data preprocessing.md" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Common/Data preprocessing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Lecture note.md" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Lecture note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Problem.md" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Decison Tree Algorithm/Problem.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,17 +60,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/amal/Documents/Stock-Market-Analysis",
+    "last_opened_file_path": "/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/PYTHON/Coding Questions",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Artificial Intelligence (AI)" />
       <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection" />
       <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Performance measuments" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm/K-Nearest Neighbor Algorithm/png_files" />
       <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm" />
-      <recent name="$PROJECT_DIR$/Machine Learning/Theory" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,14 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692778605545</updated>
-    </task>
-    <task id="LOCAL-00142" summary="pandas : right outer joining">
-      <option name="closed" value="true" />
-      <created>1695284560538</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1695284560538</updated>
     </task>
     <task id="LOCAL-00143" summary="pandas : full outer joining">
       <option name="closed" value="true" />
@@ -491,12 +466,19 @@
       <option name="project" value="LOCAL" />
       <updated>1698480571125</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="machine learning: files added">
+      <option name="closed" value="true" />
+      <created>1700464890744</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1700464890745</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pandas : replacing_unrealistic_data_to_normal_data_filled_by_mean" />
     <MESSAGE value="pandas : workout_3" />
     <MESSAGE value="pandas : save_cleaned_file_externally" />
     <MESSAGE value="Machine Learning" />
@@ -521,7 +503,8 @@
     <MESSAGE value="machine learning: Supervised machine learning: KNN implementation : diabetic data" />
     <MESSAGE value="machine learning: Supervised machine learning: KNN implementation : iris flower data" />
     <MESSAGE value="machine learning: ipynb files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="machine learning: ipynb files added" />
+    <MESSAGE value="machine learning: files added" />
+    <option name="LAST_COMMIT_MESSAGE" value="machine learning: files added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
