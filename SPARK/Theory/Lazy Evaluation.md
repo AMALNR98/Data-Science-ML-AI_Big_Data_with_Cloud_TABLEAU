@@ -7,7 +7,7 @@ Here's a brief overview of how lazy evaluation works in PySpark:
     ```python
     from pyspark.sql import SparkSession
 
-    # Create a Spark session
+    # Create a Theory session
     spark = SparkSession.builder.appName("LazyEvaluationExample").getOrCreate()
 
     # Read a CSV file into a DataFrame (transformation)

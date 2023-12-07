@@ -13,7 +13,7 @@
       - Name node: Store metadata
       - Data Node: Store actual data
       - Secondary Name node : backup data
-
+---
 - There are many components in spark, but unlike Hadoop, we don't need all components at a time
 - Spark 100 times faster than Hadoop (Because `In-memory computation`)
 - Features of Sparks:
@@ -36,4 +36,18 @@
 ---
 - ***Spark Components***
   1. Spark core
-  2. 
+     - Engine of spark
+     - convert incoming data to RDD or dataframe
+  2. Spark SQL
+     - For processing Structured(to dataframe) or semi-structure data
+  3. Spark streaming
+     - Used for Real time data
+  4. Spark mlib
+     - For perform machine learning
+  5. Spark graphx
+     - For visualization
+- Spark libraries
+  1. Spark SQL
+  2. Spark streaming
+  3. Spark mlib
+  4. spark graphx

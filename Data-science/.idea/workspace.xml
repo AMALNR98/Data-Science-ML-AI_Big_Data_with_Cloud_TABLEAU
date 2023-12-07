@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1051b5b7-6dd7-449e-a37a-885ffea5604b" name="Changes" comment="machine learning: files added">
-      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Natural Language Processing/NLP Applications.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Natural Language Processing/Pre-processing steps.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Natural Language Processing/TF-IDF example.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Algorithms/And colony optimization.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Algorithms/Genetic Algorithm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/Activation Function.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/Introduciton.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/Lecture Note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/miselaneious/Batch_size.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/miselaneious/Binary Cross Entropy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/miselaneious/Epoch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/miselaneious/Loss or Cost Function.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/miselaneious/png_files/column 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/miselaneious/png_files/loss function 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/png_files/Activation Function.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/png_files/Adding bias to all layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/png_files/Bias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/png_files/Calculation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/png_files/multy layer neural network.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Artificial Neural Network (ANN)/png_files/single neural network.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Deep Learning/Deep Learnign vs Machine Learning.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Deep Learning/Lecture Note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Deep Learning/Introduction.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Lecture Note.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +78,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/PYTHON/Coding Questions",
+    "last_opened_file_path": "/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning/Deep Learning" />
+      <recent name="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Supervised machine learning" />
+      <recent name="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning/Deep Learning" />
+      <recent name="$PROJECT_DIR$/Artificial Intelligence (AI)/Machine Learning" />
       <recent name="$PROJECT_DIR$/Artificial Intelligence (AI)" />
-      <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Small topics/Feature Selection &amp; Feature extraction/Feature Selection" />
-      <recent name="$PROJECT_DIR$/Machine Learning/Miselaneious/Performance measuments" />
-      <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm/K-Nearest Neighbor Algorithm/png_files" />
-      <recent name="$PROJECT_DIR$/Machine Learning/Supervised machine learning/Classification Algorithm" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -81,14 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692778605545</updated>
-    </task>
-    <task id="LOCAL-00143" summary="pandas : full outer joining">
-      <option name="closed" value="true" />
-      <created>1695284569443</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1695284569443</updated>
     </task>
     <task id="LOCAL-00144" summary="pandas : drop missing value included row">
       <option name="closed" value="true" />
@@ -474,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700464890745</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="machine learning: files added">
+      <option name="closed" value="true" />
+      <created>1701072774576</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1701072774576</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
