@@ -46,3 +46,4 @@ Here's a simplified overview of the training process during one epoch:
 
 In practice, the number of epochs is a hyperparameter that is often determined through experimentation and validation performance monitoring.
 
+- it has one back propagation and one forward propagation.

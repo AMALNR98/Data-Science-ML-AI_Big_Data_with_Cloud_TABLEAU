@@ -10,3 +10,13 @@ Deep learning
   2. CNN (Convolution Neural Network)
   3. CV (Computer vision openCV)
   4. OCR ()
+- Types of neural networks
+  - ANN
+  - CNN
+  - RNN
+- CNN
+  - Image processing: CNN is great at understanding images and computer vision tasks
+  - Spotting Patterns: They find patterns like edges and textures(convolutional layers)
+  - Downsizing: They make things smaller to save time (Polling layers: - Reducing size)
+  - making Sense: CNN can figure out what's in pictures
+  - Transfer learning: They can learn from other smart models
