@@ -1,0 +1,11 @@
+- aws s3 ls
+- aws ec2 describe-instances
+- aws s3 ls s3://bucket_path/ --recursive
+- aws s3 ls s3://bucked_path/ --recursive --human-readable
+- How to create a bucket
+  - aws s3 mb s3://bucket_name/
+  - mb- make bucket
+- How to delete bucket
+  - aws s3 rb s3://bucket_name/
+- copy file local to S3
+  - aws s3 cp source_path destination_path

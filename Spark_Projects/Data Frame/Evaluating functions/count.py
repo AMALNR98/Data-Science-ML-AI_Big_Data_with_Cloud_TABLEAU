@@ -25,3 +25,9 @@ print('*' * 50)
 location_count_desc = df.groupBy('loc').count().orderBy('count', ascending=False)
 location_count_desc.show()
 print('*' * 50)
+
+# Works in india each profession count
+works_in_india = df.filter(col('loc') == 'india') \
+    .groupBy('prof').count() \
+    .orderBy('count', ascending = False)
+works_in_india.show()
