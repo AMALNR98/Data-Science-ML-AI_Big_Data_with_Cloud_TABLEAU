@@ -20,3 +20,14 @@ Deep learning
   - Downsizing: They make things smaller to save time (Polling layers: - Reducing size)
   - making Sense: CNN can figure out what's in pictures
   - Transfer learning: They can learn from other smart models
+- RNN
+  - Sequential Data: RNNs are for dealing with things in order, like sentence or time series.
+  - Remembering: They use memory cells to remember past information and context while processing sequences
+  - Time-Step Computation: RNN works on one piece of data at a time, moving forward
+  - Variable Length: They're okay with data of different lengths, like sentences of varying words
+  - Shortcomings: RNN struggles to remember far-back information in long sequences.
+- Applications
+  - Self-driving Cars
+    - Deep learning powers autonomous vehicles, enabling them to perceive their environment and make driving decisions
+  - Driver Assistance Systems
+    - 
