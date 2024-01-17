@@ -1,1 +1,0 @@
-used when high error in simple linear regression
