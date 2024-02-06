@@ -7,7 +7,7 @@ detector = htm.handDetector()
 draw_color = (255,255,255)
 
 # Creating image canvas
-img__canvas = np.zeros((720, 1280,3),np.uint8)
+img_canvas = np.zeros((720, 1280,3),np.uint8)
 
 
 cap = cv2.VideoCapture(0)
@@ -100,21 +100,30 @@ while True:
             # colors
             if draw_color == (0,0,0):
                 cv2.line(img,[xp,yp],[x1,y1],color=draw_color,thickness=50)
-                cv2.line(img__canvas,[xp,yp],[x1,y1],color=draw_color,thickness=50)
+                cv2.line(img_canvas,[xp,yp],[x1,y1],color=draw_color,thickness=50)
 
             else:
                 cv2.line(img,[xp,yp],[x1,y1],color=draw_color,thickness=15)
-                cv2.line(img__canvas,[xp,yp],[x1,y1],color=draw_color,thickness=15)
+                cv2.line(img_canvas,[xp,yp],[x1,y1],color=draw_color,thickness=15)
            
             xp,yp = x1,y1
             
 
+# Merging canvas and video
+    # converting img canvas to grayscale
+    img_gray = cv2.cvtColor(img_canvas,cv2.COLOR_BGR2GRAY)
+    _, img_inv = cv2.threshold(img_gray,20,255,cv2.THRESH_BINARY_INV)
+    # conveting this gray image to bgr 
+    img_inv = cv2.cvtColor(img_inv,cv2.COLOR_GRAY2BGR)
 
+    img = cv2.bitwise_and(img,img_inv)
+    img = cv2.bitwise_or(img, img_canvas)
 
-
+    # Adding images
+    img = cv2.addWeighted(img,1,img_canvas,0.5,0)
 
     cv2.imshow('Virtual painter', img)
-    cv2.imshow('Virtual painter canvas', img__canvas)
+    # cv2.imshow('Virtual painter canvas', img_canvas)
 
     if cv2.waitKey(1) & 0xFF == 27:
         break
