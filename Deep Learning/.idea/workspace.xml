@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e6ef5c7-ce9d-4029-bdbf-32e7c954cac1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Generative AI/Generative AI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generative AI/Lecture notes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RNN/LSTM/Lecture Note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RNN/LSTM/Long Short Term Memory(LSTM).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RNN/LSTM/Word prediction/IndiaUS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RNN/LSTM/Word prediction/prediction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RNN/LSTM/Word prediction/tokenizer.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RNN/LSTM/Word prediction/word_prediction_model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenCV/Virtual painter/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenCV/Virtual painter/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/amal/Projects/Document-Layout-Analysis",
+    "last_opened_file_path": "/home/amal/Documents/Data-Science-ML-AI_Big_Data_with_Cloud_TABLEAU/Deep Learning",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
