@@ -1,0 +1,4 @@
+***Clustering applications:***
+- 
+- Market segmentation :- 
+- 
