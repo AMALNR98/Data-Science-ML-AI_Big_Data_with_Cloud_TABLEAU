@@ -1,0 +1,5 @@
+- copy google api to a text file and save as .env
+- Install packages
+  - pip install gemini
+  - pip install python-dotenv
+  - pip install google-generativeai
